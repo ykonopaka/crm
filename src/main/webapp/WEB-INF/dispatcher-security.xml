@@ -1,0 +1,37 @@
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns="http://www.springframework.org/schema/security" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/security
+http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+	<http pattern="/login*" security="none"/>
+	<http pattern="/configure*" security="none"/>
+	<http pattern="/forgotpasswd*" security="none"/>
+	<http pattern="/static/**" security="none"/>
+	<http auto-config="false" use-expressions="true">
+		<form-login login-processing-url="/j_spring_security_check"
+			login-page="/login"
+			default-target-url="/index" 
+			authentication-success-handler-ref="authenticationSuccessHandler"
+			authentication-failure-handler-ref="authenticationFailureHandler" />
+		<logout />
+		<intercept-url pattern="/administration/**" access="hasRole('ADMIN')" />
+		<intercept-url pattern="/**" access="hasAnyRole('ADMIN','COORDINATOR','OPERATOR')"/>
+		<intercept-url pattern="/uploads/**" access="hasAnyRole('ADMIN','COORDINATOR','OPERATOR')"/>
+			
+		<session-management session-fixation-protection="migrateSession" session-authentication-error-url="/login?msg=accountDisabled"> 
+            <concurrency-control max-sessions="1" error-if-maximum-exceeded="true" expired-url="/login?msg=sessionExpired" session-registry-alias="sessionRegistry"/>
+        </session-management>
+	</http>
+ 
+	<authentication-manager>
+		<authentication-provider user-service-ref="userService">
+  			<password-encoder ref="passwordEncoder">
+  				<salt-source ref="saltSource"/>
+			</password-encoder>
+		</authentication-provider>
+	</authentication-manager>
+	
+	<beans:bean id="sessionRegistry" class="org.springframework.security.core.session.SessionRegistryImpl" />
+</beans:beans>

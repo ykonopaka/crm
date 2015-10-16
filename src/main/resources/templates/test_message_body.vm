@@ -1,0 +1,11 @@
+<html>
+<body>
+	Dear <b>${user.firstName}</b>,<br>
+	<br>
+	If you are able to read this message the mail service is working well!<br>
+	Please do not reply to this message.<br>
+	<br>
+	Thank you,<br>
+	CRM Development Team.<br>
+</body>
+</html>

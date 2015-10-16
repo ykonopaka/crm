@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+  
+    <definition name="loginpage.base.definition" template="/WEB-INF/jsp/login/loginpagebase.jsp">
+    	<put-attribute name="box" value="" />
+    </definition>
+    
+	<definition name="login" extends="loginpage.base.definition">
+    	<put-attribute name="box" value="/WEB-INF/jsp/login/body/loginbox.jsp" />
+    </definition>
+    
+	<definition name="forgotpasswd" extends="loginpage.base.definition">
+    	<put-attribute name="box" value="/WEB-INF/jsp/login/body/forgotbox.jsp" />
+    </definition>
+    
+	<definition name="layout.base.definition" template="/WEB-INF/jsp/layoutbase.jsp">
+		<put-attribute name="header" value="" />
+    	<put-attribute name="topsearch" value="/WEB-INF/jsp/topsearch.jsp" />
+    	<put-attribute name="navigationbar" value="/WEB-INF/jsp/navigationbar.jsp" />
+    	<put-attribute name="pagebody" value="" />
+    	<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+     	<put-attribute name="messages" value="/WEB-INF/jsp/messages.jsp" />
+    </definition>
+    
+	<definition name="administration" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.administration" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/administration.jsp" />
+    </definition>
+    
+	<definition name="mypage" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.my.page" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/dashboard/mypage.jsp" />
+    </definition>
+    
+	<definition name="workflow" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.workflow" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/workflow.jsp" />
+    </definition>
+    
+	<definition name="reports" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.reports" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/reports.jsp" />
+    </definition>
+    
+	<definition name="myusersettings" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.change.user.settings" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/user/myusersettings.jsp" />
+    	<put-attribute name="menu_item" value="" />
+     	<put-attribute name="submenu_item" value="" />
+    </definition>
+    
+	<definition name="changepasswd" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.change.password" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/user/changepasswd.jsp" />
+    </definition>
+    
+	<definition name="adduser" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.user" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/user/add.jsp" />
+    </definition>
+    
+    <definition name="edituser" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.user" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/user/edit.jsp" />
+    </definition>
+    
+    <definition name="deleteuser" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.delete.user" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/user/delete.jsp" />
+    </definition>
+    
+	<definition name="manageusers" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.manage.users" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/user/manage.jsp" />
+    </definition>
+    
+    <definition name="loginhistory" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.loginhistory.users" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/user/loginhistory.jsp" />
+    </definition>
+    
+    <definition name="connectedusers" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.connected.users" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/user/connectedusers.jsp" />
+    </definition>
+    
+	<definition name="addoffice" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.office" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/office/add.jsp" />
+    </definition>
+    
+    <definition name="manageoffices" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.manage.offices" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/office/manage.jsp" />
+    </definition>
+    
+    <definition name="editoffice" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.office" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/office/edit.jsp" />
+    </definition>  
+    
+	<definition name="deleteoffice" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.delete.office" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/office/delete.jsp" />
+    </definition>  
+    
+    <definition name="addphonenumber" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.phone.number" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/phonenumber/add.jsp" />
+    </definition>
+    
+	<definition name="managephonenumbers" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.manage.phone.numbers" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/phonenumber/manage.jsp" />
+    </definition>  
+    
+    <definition name="deletephonenumber" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.delete.phone.number" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/phonenumber/delete.jsp" />
+    </definition> 
+    
+	<definition name="editphonenumber" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.phone.number" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/phonenumber/edit.jsp" />
+    </definition>
+
+	<definition name="manageinfosources" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.manage.info.source" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/infosource/manage.jsp" />
+    </definition>  
+     
+	<definition name="addinfosource" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.info.source" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/infosource/add.jsp" />
+    </definition>
+
+	<definition name="editinfosource" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.info.source" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/infosource/edit.jsp" />
+    </definition>
+    
+    <definition name="deleteinfosource" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.delete.info.source" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/infosource/delete.jsp" />
+    </definition>
+    
+	<definition name="manageempltypes" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.manage.empl.type" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/empltype/manage.jsp" />
+    </definition>  
+     
+	<definition name="addempltype" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.empl.type" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/empltype/add.jsp" />
+    </definition>
+
+	<definition name="editempltype" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.empl.type" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/empltype/edit.jsp" />
+    </definition>
+    
+    <definition name="deleteempltype" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.delete.empl.type" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/empltype/delete.jsp" />
+    </definition>  
+    
+    <definition name="manageclients" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.manage.client" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/client/manage.jsp" />
+    </definition>  
+    
+    <definition name="addclient" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.client" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/client/add.jsp" />
+    </definition>
+    
+    <definition name="deleteclient" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.delete.client" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/client/delete.jsp" />
+    </definition>
+    
+	<definition name="editclient" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.client" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/client/edit.jsp" />
+    </definition>
+    
+   	<definition name="viewclient" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.view.client" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/client/view.jsp" />
+    </definition>
+    
+    <definition name="manageclientphonenumbers" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.manage.client.phone.numbers" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/client/phonenumber/manage.jsp" />
+    </definition>  
+    
+    <definition name="addclientphonenumber" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.client.phone.number" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/client/phonenumber/add.jsp" />
+    </definition>     
+    
+    <definition name="editclientphonenumber" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.client.phone.number" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/client/phonenumber/edit.jsp" />
+    </definition>  
+    
+	<definition name="deleteclientphonenumber" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.delete.client.phone.number" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/client/phonenumber/delete.jsp" />
+    </definition>
+    
+	<definition name="404" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.page.not.found" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/error/404.jsp" />
+    </definition>
+    
+	<definition name="403" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.access.denied" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/error/403.jsp" />
+    </definition>
+    
+	<definition name="generalfailure" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.general.failure" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/error/generalfailure.jsp" />
+    </definition>
+    
+    <definition name="addcallclient" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.call.step1.client" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/add/client.jsp" />
+    </definition>
+    
+	<definition name="addcallofficephone" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.call.step2.office.phone" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/add/officephone.jsp" />
+    </definition>  
+
+	<definition name="addcallcredit" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.call.step3.credit" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/add/credit.jsp" />
+    </definition>     
+    
+	<definition name="addcallsource" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.call.step4.info.source" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/add/source.jsp" />
+    </definition>    
+
+	<definition name="addcalladditionalcallinfo" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.call.step5.additional.info" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/add/additionalinfo.jsp" />
+    </definition>    
+    
+    <definition name="addcallclientnumber" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.call.step6.client.phone.number" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/add/clientnumber.jsp" />
+    </definition>  
+    
+	<definition name="editcallclient" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.call.step1.client" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/edit/client.jsp" />
+    </definition>
+    
+	<definition name="editcallofficephone" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.call.step2.office.phone" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/edit/officephone.jsp" />
+    </definition>  
+
+	<definition name="editcallcredit" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.call.step3.credit" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/edit/credit.jsp" />
+    </definition>     
+    
+	<definition name="editcallsource" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.call.step4.info.source" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/edit/source.jsp" />
+    </definition>    
+
+	<definition name="editcalladditionalcallinfo" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.call.step5.additional.info" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/edit/additionalinfo.jsp" />
+    </definition>    
+    
+    <definition name="editcallclientnumber" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.call.step6.client.phone.number" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/edit/clientnumber.jsp" />
+    </definition> 
+    
+    <definition name="managecalls" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.manage.calls" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/manage.jsp" />
+    </definition>
+    
+    <definition name="manageusercalls" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.manage.calls" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/manageusercalls.jsp" />
+    </definition>
+    
+    <definition name="deletecall" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.delete.call" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/delete.jsp" />
+    </definition>
+    
+    <definition name="viewcall" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.view.call" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/view.jsp" />
+    </definition>
+    
+    <definition name="editcall" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.call" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/call/edit.jsp" />
+    </definition>
+    
+    <definition name="managedeals" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.manage.deals" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/manage.jsp" />
+    </definition>
+    
+    <definition name="manageuserdeals" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.manage.deals" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/manageuserdeals.jsp" />
+    </definition>
+    
+
+	<definition name="adddeal" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/creditinfo.jsp" />
+    </definition>      
+    
+	<definition name="adddealcustomer" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/customerinfo.jsp" />
+    </definition>
+    
+	<definition name="adddealpassport" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/passportinfo.jsp" />
+    </definition>
+    
+	<definition name="adddealmarriage" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/marriageinfo.jsp" />
+    </definition>
+    
+   	<definition name="adddealaddress" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/addressinfo.jsp" />
+    </definition>
+    
+	<definition name="adddealphone" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/phoneinfo.jsp" />
+    </definition>
+    
+	<definition name="adddealcontactpeople" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/contactpeopleinfo.jsp" />
+    </definition>
+    
+    <definition name="adddealcurrentworkingplace" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/currentworkingplace.jsp" />
+    </definition>
+    
+    <definition name="adddealadditionalworkingplace" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/additionalworkingplace.jsp" />
+    </definition>
+    
+	<definition name="adddealpreviousworkingplace" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/previousworkingplace.jsp" />
+    </definition>
+    
+	<definition name="adddealincomeoutcome" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/incomeoutcome.jsp" />
+    </definition>  
+    
+	<definition name="adddealproperty" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/propertyinfo.jsp" />
+    </definition>     
+    
+   	<definition name="adddealcreditcards" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/add/creditcardinfo.jsp" />
+    </definition>  
+    
+   	<definition name="fileupload" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.deal.upload.files" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/fileupload.jsp" />
+    </definition>
+    
+	<definition name="fileuploadsuccess" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.deal.upload.files" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/fileuploadsuccess.jsp" />
+    </definition>
+    
+	<definition name="docupload" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.deal.upload.docs" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/docupload.jsp" />
+    </definition>
+    
+	<definition name="docuploadsuccess" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.deal.upload.docs" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/docuploadsuccess.jsp" />
+    </definition>
+    
+	<definition name="viewdeal" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.view.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/view.jsp" />
+    </definition>
+    
+	<definition name="editdeal" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit.jsp" />
+    </definition>      
+    
+	<definition name="editdealcustomer" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit/customerinfo.jsp" />
+    </definition>
+    
+	<definition name="editdealpassport" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit/passportinfo.jsp" />
+    </definition>
+    
+	<definition name="editdealmarriage" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit/marriageinfo.jsp" />
+    </definition>
+    
+   	<definition name="editdealaddress" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit/addressinfo.jsp" />
+    </definition>
+    
+	<definition name="editdealphone" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit/phoneinfo.jsp" />
+    </definition>
+    
+	<definition name="editdealcontactpeople" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit/contactpeopleinfo.jsp" />
+    </definition>
+    
+    <definition name="editdealcurrentworkingplace" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit/currentworkingplace.jsp" />
+    </definition>
+    
+    <definition name="editdealadditionalworkingplace" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit/additionalworkingplace.jsp" />
+    </definition>
+    
+	<definition name="editdealpreviousworkingplace" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit/previousworkingplace.jsp" />
+    </definition>
+    
+	<definition name="editdealincomeoutcome" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit/incomeoutcome.jsp" />
+    </definition>  
+    
+	<definition name="editdealproperty" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit/propertyinfo.jsp" />
+    </definition>     
+    
+   	<definition name="editdealcreditcards" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.edit.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/edit/creditcardinfo.jsp" />
+    </definition>  
+    
+    <definition name="deletedeal" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.delete.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/delete.jsp" />
+    </definition>
+    
+    <definition name="addcomment" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.add.comment" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/comments/add.jsp" />
+    </definition>
+    
+    <definition name="review" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.review.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/workflow/confirmation.jsp" />
+    </definition>
+    
+	<definition name="reject" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.reject.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/workflow/confirmation.jsp" />
+    </definition>
+    
+	<definition name="close" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.close.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/workflow/confirmation.jsp" />
+    </definition>
+    
+	<definition name="approve" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.approve.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/workflow/confirmation.jsp" />
+    </definition>
+    
+	<definition name="sign" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.sign.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/workflow/confirmation.jsp" />
+    </definition>
+    
+	<definition name="unsign" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.unsign.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/workflow/confirmation.jsp" />
+    </definition>	
+	
+	<definition name="rework" extends="layout.base.definition">
+		<put-attribute name="header" value="label.header.rework.deal" />
+    	<put-attribute name="pagebody" value="/WEB-INF/jsp/body/deal/workflow/confirmation.jsp" />
+    </definition>	
+	
+    
+</tiles-definitions>

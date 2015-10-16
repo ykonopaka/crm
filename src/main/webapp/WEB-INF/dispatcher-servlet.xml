@@ -1,0 +1,234 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" 
+	xmlns:lang="http://www.springframework.org/schema/lang"
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:flow="http://www.springframework.org/schema/webflow-config"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.0.xsd
+	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+    http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+	<flow:flow-registry id="flowRegistry">
+		<flow:flow-location id="call" path="/WEB-INF/flows/call.xml"/>
+	</flow:flow-registry>
+
+	<flow:flow-executor id="flowExecutor" flow-registry="flowRegistry"/>
+	
+	<bean class="org.springframework.webflow.mvc.servlet.FlowHandlerMapping">
+		<property name="flowRegistry" ref="flowRegistry"/>
+	</bean>
+	
+	<bean class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter">
+		<property name="flowExecutor" ref="flowExecutor"/>
+	</bean>
+	
+	<context:component-scan base-package="org.ekonopaka.crm" />
+
+	<mvc:resources mapping="/static/**" location="/static/" />
+	<mvc:resources mapping="/uploads/**" location="/uploads/" />
+
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+	    <property name="viewClass">
+	        <value>org.springframework.web.servlet.view.tiles2.TilesView</value>
+	    </property>
+	</bean>
+	<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+	    <property name="definitions">
+	        <list>
+	            <value>/WEB-INF/tiles.xml</value>
+	        </list>
+	    </property>
+	</bean>
+
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+		p:location="classpath:jdbc.properties" />
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+          destroy-method="close">
+        <property name="driverClass" value="${jdbc.driverClassName}" />
+        <property name="jdbcUrl" value="${jdbc.databaseurl}" />
+        <property name="user" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" /> 
+        <property name="initialPoolSize" value="3"/>
+        <property name="minPoolSize" value="3"/>
+        <property name="maxPoolSize" value="50"/>
+        <property name="idleConnectionTestPeriod" value="300"/>
+        <property name="acquireIncrement" value="1"/>
+        <property name="maxStatements" value="0"/>
+        <property name="numHelperThreads" value="3"/>
+	</bean>
+
+ 	<bean id="passwordEncoder"
+		class="org.springframework.security.authentication.encoding.ShaPasswordEncoder" />
+		
+	<bean class="org.springframework.security.authentication.dao.ReflectionSaltSource" id="saltSource">
+  		<property name="userPropertyToUse" value="username"/>
+	</bean> 
+
+	<!-- create Hibernate session factory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		
+		<property name="configurationClass">
+			<value>org.hibernate.cfg.AnnotationConfiguration</value>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.dialect">${jdbc.dialect}</prop>
+				<prop key="hibernate.connection.charSet">UTF-8</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+
+		<property name="annotatedClasses">
+			<list>
+				<value>org.ekonopaka.crm.model.User</value>
+				<value>org.ekonopaka.crm.model.Role</value>
+				<value>org.ekonopaka.crm.model.LoginEntry</value>
+				<value>org.ekonopaka.crm.model.InfoSource</value>
+				<value>org.ekonopaka.crm.model.Credit</value>
+				<value>org.ekonopaka.crm.model.Client</value>
+				<value>org.ekonopaka.crm.model.ClientPhoneNumber</value>
+ 				<value>org.ekonopaka.crm.model.Office</value>
+				<value>org.ekonopaka.crm.model.PhoneNumber</value>
+				<value>org.ekonopaka.crm.model.Call</value>
+				<value>org.ekonopaka.crm.model.Deal</value>
+				<value>org.ekonopaka.crm.model.Passport</value>
+				<value>org.ekonopaka.crm.model.Marriage</value>
+				<value>org.ekonopaka.crm.model.Customer</value>
+				<value>org.ekonopaka.crm.model.Address</value>
+				<value>org.ekonopaka.crm.model.CustomerPhoneSet</value>
+				<value>org.ekonopaka.crm.model.ContactPersons</value>
+				<value>org.ekonopaka.crm.model.WorkingPlace</value>
+				<value>org.ekonopaka.crm.model.AdditionalWorkingPlace</value>
+				<value>org.ekonopaka.crm.model.PreviousWorkingPlace</value>	
+				<value>org.ekonopaka.crm.model.IncomeOutcome</value>	
+				<value>org.ekonopaka.crm.model.Property</value>
+				<value>org.ekonopaka.crm.model.CreditCard</value>
+				<value>org.ekonopaka.crm.model.AdditionalCallInfo</value>
+				<value>org.ekonopaka.crm.model.Comment</value>	
+				<value>org.ekonopaka.crm.model.types.CreditType</value>
+				<value>org.ekonopaka.crm.model.types.InfoSourceType</value>
+				<value>org.ekonopaka.crm.model.types.EmploymentType</value>
+				<value>org.ekonopaka.crm.model.types.BusinessLineType</value>
+				<value>org.ekonopaka.crm.model.types.CompanySizeType</value>
+				<value>org.ekonopaka.crm.model.types.ContactPersonType</value>
+				<value>org.ekonopaka.crm.model.types.ConvictionType</value>
+				<value>org.ekonopaka.crm.model.types.CreditObjectiveType</value>
+				<value>org.ekonopaka.crm.model.types.EducationType</value>
+				<value>org.ekonopaka.crm.model.types.GenderType</value>
+				<value>org.ekonopaka.crm.model.types.IncomeType</value>
+				<value>org.ekonopaka.crm.model.types.JobType</value>
+				<value>org.ekonopaka.crm.model.types.MaritalStatusType</value>
+				<value>org.ekonopaka.crm.model.types.MilitaryServiceType</value>
+				<value>org.ekonopaka.crm.model.types.OrganizationType</value>
+				<value>org.ekonopaka.crm.model.types.PositionType</value>
+				<value>org.ekonopaka.crm.model.types.PropertyHistoryType</value>
+				<value>org.ekonopaka.crm.model.types.PropertyType</value>
+				<value>org.ekonopaka.crm.model.types.RegionType</value>
+				<value>org.ekonopaka.crm.model.types.CreditFormType</value>
+				<value>org.ekonopaka.crm.model.types.InterestType</value>
+				<value>org.ekonopaka.crm.model.types.CurrencyType</value>
+				<value>org.ekonopaka.crm.model.types.DealStateType</value>
+				<value>org.ekonopaka.crm.model.types.DealWorkflowType</value>
+				<value>org.ekonopaka.crm.model.types.DealWorkflowSideType</value>	
+			</list>
+		</property>
+	</bean>
+
+	<!-- Transaction manager -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="authenticationSuccessHandler" class="org.ekonopaka.crm.handlers.LoginSuccessHandler"/>
+	
+	<bean id="mailSender" class ="org.springframework.mail.javamail.JavaMailSenderImpl" >
+	    <property name="host" value="smtp.gmail.com" />
+	    <property name="port" value="587" />
+	    <property name="username" value="crmekon@gmail.com" />
+	    <property name="password" value="gorod312" />
+	    <property name="javaMailProperties">
+	    <props>
+	        <prop key="mail.smtp.starttls.enable">true</prop>
+	    </props>
+	    </property>
+	</bean>
+	
+	<bean id="velocityEngine"
+		class="org.springframework.ui.velocity.VelocityEngineFactoryBean">
+		<property name="velocityProperties">
+			<value>
+				resource.loader=class
+				class.resource.loader.class=org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+			</value>
+		</property>
+	</bean>
+
+	<!-- enables Spring transactions with @Transactional -->
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	
+	<bean id="initConfigurator" class="org.ekonopaka.crm.init.InitConfigurator" init-method="init">
+	</bean>
+
+	<bean id="authenticationFailureHandler"
+	    class="org.springframework.security.web.authentication.ExceptionMappingAuthenticationFailureHandler">
+	    <property name="exceptionMappings">
+	        <props>
+	            <prop key="org.springframework.security.authentication.BadCredentialsException">/login?msg=badCredentials</prop>
+	            <prop key="org.springframework.security.authentication.CredentialsExpiredException">/login?msg=credentialsExpired</prop>
+	            <prop key="org.springframework.security.authentication.LockedException">/login?msg=accountLocked</prop>
+	            <prop key="org.springframework.security.authentication.DisabledException">/login?msg=accountDisabled</prop>
+	        </props>
+	    </property>
+	</bean>
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename" value="classpath:messages" />
+		<property name="defaultEncoding" value="UTF-8" />
+	</bean>
+
+	<bean id="localeChangeInterceptor"
+		class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+		<property name="paramName" value="lang" />
+	</bean>
+
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+		<property name="defaultLocale" value="ru" />
+	</bean>
+
+	<!-- Configures JSR-303 Declarative Validation with default provider on classpath (Hibernate Validator) -->
+	<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
+	
+	<!-- Configures JSR-303 Declarative Validation with default provider on classpath (Hibernate Validator) -->
+	<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"/>
+	
+	<bean id="multipartResolver"
+    class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+    <!-- max file size in bytes -->
+    <property name="maxUploadSize" value="5000000" />
+    <!-- other properties... -->
+</bean>
+	
+</beans>

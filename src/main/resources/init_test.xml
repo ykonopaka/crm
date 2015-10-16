@@ -1,0 +1,929 @@
+<configuration>
+  <infoSourceTypes>
+    <infoSourceType>
+      <name>NEWSPAPER</name>
+      <code>label.newspaper.source.type</code>
+      <isEnabled>true</isEnabled>
+    </infoSourceType>
+    <infoSourceType>
+      <name>STREAM_STICK</name>
+      <code>label.stream.stick.source.type</code>
+      <isEnabled>true</isEnabled>
+    </infoSourceType>
+    <infoSourceType>
+      <name>RADIO</name>
+      <code>label.radio.source.type</code>
+      <isEnabled>true</isEnabled>
+    </infoSourceType>
+    <infoSourceType>
+      <name>TV</name>
+      <code>label.tv.source.type</code>
+      <isEnabled>true</isEnabled>
+    </infoSourceType>
+    <infoSourceType>
+      <name>RECOMMENDATION</name>
+      <code>label.recommendation.source.type</code>
+      <isEnabled>true</isEnabled>
+    </infoSourceType>
+    <infoSourceType>
+      <name>BILLBOARD</name>
+      <code>label.billboard.source.type</code>
+      <isEnabled>true</isEnabled>
+    </infoSourceType>
+    <infoSourceType>
+      <name>OUTDOOR_AD</name>
+      <code>label.outdoor.ad.source.type</code>
+      <isEnabled>true</isEnabled>
+    </infoSourceType>
+  </infoSourceTypes>
+  <infoSources>
+    <infoSource>
+      <infoSourceType reference="../../../infoSourceTypes/infoSourceType[7]"/>
+      <details>Details 1</details>
+      <isEnabled>true</isEnabled>
+    </infoSource>
+    <infoSource>
+      <infoSourceType reference="../../../infoSourceTypes/infoSourceType[6]"/>
+      <details>Details 12</details>
+      <isEnabled>true</isEnabled>
+    </infoSource>
+    <infoSource>
+      <infoSourceType reference="../../../infoSourceTypes/infoSourceType[7]"/>
+      <details>Details 13</details>
+      <isEnabled>true</isEnabled>
+    </infoSource>
+    <infoSource>
+      <infoSourceType reference="../../../infoSourceTypes/infoSourceType[3]"/>
+      <details>Details 14</details>
+      <isEnabled>true</isEnabled>
+    </infoSource>
+    <infoSource>
+      <infoSourceType reference="../../../infoSourceTypes/infoSourceType[6]"/>
+      <details>Details 15</details>
+      <isEnabled>true</isEnabled>
+    </infoSource>
+    <infoSource>
+      <infoSourceType reference="../../../infoSourceTypes/infoSourceType"/>
+      <details>Details 16</details>
+      <isEnabled>true</isEnabled>
+    </infoSource>
+    <infoSource>
+      <infoSourceType reference="../../../infoSourceTypes/infoSourceType[7]"/>
+      <details>Details 17</details>
+      <isEnabled>true</isEnabled>
+    </infoSource>
+    <infoSource>
+      <infoSourceType reference="../../../infoSourceTypes/infoSourceType[3]"/>
+      <details>Details 18</details>
+      <isEnabled>true</isEnabled>
+    </infoSource>
+    <infoSource>
+      <infoSourceType reference="../../../infoSourceTypes/infoSourceType"/>
+      <details>Details 19</details>
+      <isEnabled>true</isEnabled>
+    </infoSource>
+    <infoSource>
+      <infoSourceType reference="../../../infoSourceTypes/infoSourceType[3]"/>
+      <details>Details 199</details>
+      <isEnabled>true</isEnabled>
+    </infoSource>
+  </infoSources>
+  <creditTypes>
+    <creditType>
+      <name>PLEDGE</name>
+      <code>label.plegde.credit.type</code>
+      <isEnabled>true</isEnabled>
+    </creditType>
+    <creditType>
+      <name>NON-PLEDGE_WITH_REVENUE_REPORT</name>
+      <code>label.non.pledge.with.revenue.report</code>
+      <isEnabled>true</isEnabled>
+    </creditType>
+    <creditType>
+      <name>NON-PLEDGE_WITHOUT_REVENUE_REPORT</name>
+      <code>label.non.pledge.without.revenue.report</code>
+      <isEnabled>true</isEnabled>
+    </creditType>
+  </creditTypes>
+  <users>
+    <user>
+      <username>admin</username>
+      <password>admin</password>
+      <firstName>Eugene</firstName>
+      <lastName>Konopaka</lastName>
+      <email>ykonopaka@gmail.com</email>
+      <isEnabled>true</isEnabled>
+      <creationDate>2013-03-27 09:08:06.313 UTC</creationDate>
+      <office>
+        <name>Office 1</name>
+        <description>Office 1 Description</description>
+        <address>Address 1</address>
+        <isEnabled>true</isEnabled>
+      </office>
+      <roles>
+        <role>
+          <authority>ADMIN</authority>
+          <code>label.administrator.role</code>
+          <isAdmin>true</isAdmin>
+        </role>
+      </roles>
+    </user>
+    <user>
+      <username>user</username>
+      <password>user</password>
+      <firstName>User</firstName>
+      <lastName>User</lastName>
+      <email>ykonopaka@lohiks.com</email>
+      <isEnabled>true</isEnabled>
+      <creationDate>2013-03-27 09:08:06.313 UTC</creationDate>
+      <office>
+        <name>Office 2</name>
+        <description>Office 2 Description</description>
+        <address>Address 2</address>
+        <isEnabled>true</isEnabled>
+      </office>
+      <roles>
+        <role>
+          <authority>OPERATOR</authority>
+          <code>label.operator.role</code>
+          <isAdmin>false</isAdmin>
+        </role>
+      </roles>
+    </user>
+  </users>
+  <roles>
+    <role reference="../../users/user/roles/role"/>
+    <role reference="../../users/user[2]/roles/role"/>
+    <role>
+      <authority>OBSERVER</authority>
+      <code>label.observer.role</code>
+      <isAdmin>false</isAdmin>
+    </role>
+  </roles>
+  <employmentTypes>
+    <employmentType>
+      <code>label.official.worker.employment.type</code>
+      <isEnabled>true</isEnabled>
+    </employmentType>
+    <employmentType>
+      <code>label.non.official.worker.employment.type</code>
+      <isEnabled>true</isEnabled>
+    </employmentType>
+    <employmentType>
+      <code>label.private.entrepreneur.employment.type</code>
+      <isEnabled>true</isEnabled>
+    </employmentType>
+  </employmentTypes>
+  <offices>
+    <office reference="../../users/user/office"/>
+    <office reference="../../users/user[2]/office"/>
+  </offices>
+  <phoneNumbers>
+    <phoneNumber>
+      <phoneNumber>048394631</phoneNumber>
+      <description>Main office phone number</description>
+      <office reference="../../../users/user/office"/>
+      <isMobile>false</isMobile>
+    </phoneNumber>
+    <phoneNumber>
+      <phoneNumber>048394632</phoneNumber>
+      <description>Main office phone number 2</description>
+      <office reference="../../../users/user/office"/>
+      <isMobile>false</isMobile>
+    </phoneNumber>
+    <phoneNumber>
+      <phoneNumber>+380674870555</phoneNumber>
+      <description>My mobile phone</description>
+      <office reference="../../../users/user[2]/office"/>
+      <isMobile>true</isMobile>
+    </phoneNumber>
+    <phoneNumber>
+      <phoneNumber>+380674870557</phoneNumber>
+      <description>My mobile phone 2</description>
+      <office reference="../../../users/user[2]/office"/>
+      <isMobile>true</isMobile>
+    </phoneNumber>
+  </phoneNumbers>
+  <clients>
+    <client>
+      <firstName>FirstName0</firstName>
+      <middleName>MiddleName0</middleName>
+      <lastName>LastName0</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName1</firstName>
+      <middleName>MiddleName1</middleName>
+      <lastName>LastName1</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName2</firstName>
+      <middleName>MiddleName2</middleName>
+      <lastName>LastName2</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName3</firstName>
+      <middleName>MiddleName3</middleName>
+      <lastName>LastName3</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName4</firstName>
+      <middleName>MiddleName4</middleName>
+      <lastName>LastName4</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName5</firstName>
+      <middleName>MiddleName5</middleName>
+      <lastName>LastName5</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName6</firstName>
+      <middleName>MiddleName6</middleName>
+      <lastName>LastName6</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName7</firstName>
+      <middleName>MiddleName7</middleName>
+      <lastName>LastName7</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName8</firstName>
+      <middleName>MiddleName8</middleName>
+      <lastName>LastName8</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName9</firstName>
+      <middleName>MiddleName9</middleName>
+      <lastName>LastName9</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName10</firstName>
+      <middleName>MiddleName10</middleName>
+      <lastName>LastName10</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName11</firstName>
+      <middleName>MiddleName11</middleName>
+      <lastName>LastName11</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName12</firstName>
+      <middleName>MiddleName12</middleName>
+      <lastName>LastName12</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName13</firstName>
+      <middleName>MiddleName13</middleName>
+      <lastName>LastName13</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName14</firstName>
+      <middleName>MiddleName14</middleName>
+      <lastName>LastName14</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName15</firstName>
+      <middleName>MiddleName15</middleName>
+      <lastName>LastName15</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName16</firstName>
+      <middleName>MiddleName16</middleName>
+      <lastName>LastName16</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName17</firstName>
+      <middleName>MiddleName17</middleName>
+      <lastName>LastName17</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName18</firstName>
+      <middleName>MiddleName18</middleName>
+      <lastName>LastName18</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName19</firstName>
+      <middleName>MiddleName19</middleName>
+      <lastName>LastName19</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName20</firstName>
+      <middleName>MiddleName20</middleName>
+      <lastName>LastName20</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName21</firstName>
+      <middleName>MiddleName21</middleName>
+      <lastName>LastName21</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName22</firstName>
+      <middleName>MiddleName22</middleName>
+      <lastName>LastName22</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName23</firstName>
+      <middleName>MiddleName23</middleName>
+      <lastName>LastName23</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName24</firstName>
+      <middleName>MiddleName24</middleName>
+      <lastName>LastName24</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName25</firstName>
+      <middleName>MiddleName25</middleName>
+      <lastName>LastName25</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName26</firstName>
+      <middleName>MiddleName26</middleName>
+      <lastName>LastName26</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName27</firstName>
+      <middleName>MiddleName27</middleName>
+      <lastName>LastName27</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName28</firstName>
+      <middleName>MiddleName28</middleName>
+      <lastName>LastName28</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName29</firstName>
+      <middleName>MiddleName29</middleName>
+      <lastName>LastName29</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName30</firstName>
+      <middleName>MiddleName30</middleName>
+      <lastName>LastName30</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName31</firstName>
+      <middleName>MiddleName31</middleName>
+      <lastName>LastName31</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName32</firstName>
+      <middleName>MiddleName32</middleName>
+      <lastName>LastName32</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName33</firstName>
+      <middleName>MiddleName33</middleName>
+      <lastName>LastName33</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName34</firstName>
+      <middleName>MiddleName34</middleName>
+      <lastName>LastName34</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName35</firstName>
+      <middleName>MiddleName35</middleName>
+      <lastName>LastName35</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName36</firstName>
+      <middleName>MiddleName36</middleName>
+      <lastName>LastName36</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName37</firstName>
+      <middleName>MiddleName37</middleName>
+      <lastName>LastName37</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName38</firstName>
+      <middleName>MiddleName38</middleName>
+      <lastName>LastName38</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName39</firstName>
+      <middleName>MiddleName39</middleName>
+      <lastName>LastName39</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName40</firstName>
+      <middleName>MiddleName40</middleName>
+      <lastName>LastName40</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName41</firstName>
+      <middleName>MiddleName41</middleName>
+      <lastName>LastName41</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName42</firstName>
+      <middleName>MiddleName42</middleName>
+      <lastName>LastName42</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName43</firstName>
+      <middleName>MiddleName43</middleName>
+      <lastName>LastName43</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName44</firstName>
+      <middleName>MiddleName44</middleName>
+      <lastName>LastName44</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName45</firstName>
+      <middleName>MiddleName45</middleName>
+      <lastName>LastName45</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName46</firstName>
+      <middleName>MiddleName46</middleName>
+      <lastName>LastName46</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName47</firstName>
+      <middleName>MiddleName47</middleName>
+      <lastName>LastName47</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName48</firstName>
+      <middleName>MiddleName48</middleName>
+      <lastName>LastName48</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName49</firstName>
+      <middleName>MiddleName49</middleName>
+      <lastName>LastName49</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType"/>
+    </client>
+    <client>
+      <firstName>FirstName0</firstName>
+      <middleName>MiddleName0</middleName>
+      <lastName>LastName0</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName1</firstName>
+      <middleName>MiddleName1</middleName>
+      <lastName>LastName1</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName2</firstName>
+      <middleName>MiddleName2</middleName>
+      <lastName>LastName2</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName3</firstName>
+      <middleName>MiddleName3</middleName>
+      <lastName>LastName3</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName4</firstName>
+      <middleName>MiddleName4</middleName>
+      <lastName>LastName4</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName5</firstName>
+      <middleName>MiddleName5</middleName>
+      <lastName>LastName5</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName6</firstName>
+      <middleName>MiddleName6</middleName>
+      <lastName>LastName6</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName7</firstName>
+      <middleName>MiddleName7</middleName>
+      <lastName>LastName7</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName8</firstName>
+      <middleName>MiddleName8</middleName>
+      <lastName>LastName8</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName9</firstName>
+      <middleName>MiddleName9</middleName>
+      <lastName>LastName9</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName10</firstName>
+      <middleName>MiddleName10</middleName>
+      <lastName>LastName10</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName11</firstName>
+      <middleName>MiddleName11</middleName>
+      <lastName>LastName11</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName12</firstName>
+      <middleName>MiddleName12</middleName>
+      <lastName>LastName12</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName13</firstName>
+      <middleName>MiddleName13</middleName>
+      <lastName>LastName13</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName14</firstName>
+      <middleName>MiddleName14</middleName>
+      <lastName>LastName14</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName15</firstName>
+      <middleName>MiddleName15</middleName>
+      <lastName>LastName15</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName16</firstName>
+      <middleName>MiddleName16</middleName>
+      <lastName>LastName16</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName17</firstName>
+      <middleName>MiddleName17</middleName>
+      <lastName>LastName17</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName18</firstName>
+      <middleName>MiddleName18</middleName>
+      <lastName>LastName18</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName19</firstName>
+      <middleName>MiddleName19</middleName>
+      <lastName>LastName19</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName20</firstName>
+      <middleName>MiddleName20</middleName>
+      <lastName>LastName20</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName21</firstName>
+      <middleName>MiddleName21</middleName>
+      <lastName>LastName21</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName22</firstName>
+      <middleName>MiddleName22</middleName>
+      <lastName>LastName22</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName23</firstName>
+      <middleName>MiddleName23</middleName>
+      <lastName>LastName23</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName24</firstName>
+      <middleName>MiddleName24</middleName>
+      <lastName>LastName24</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName25</firstName>
+      <middleName>MiddleName25</middleName>
+      <lastName>LastName25</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName26</firstName>
+      <middleName>MiddleName26</middleName>
+      <lastName>LastName26</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName27</firstName>
+      <middleName>MiddleName27</middleName>
+      <lastName>LastName27</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName28</firstName>
+      <middleName>MiddleName28</middleName>
+      <lastName>LastName28</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName29</firstName>
+      <middleName>MiddleName29</middleName>
+      <lastName>LastName29</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName30</firstName>
+      <middleName>MiddleName30</middleName>
+      <lastName>LastName30</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName31</firstName>
+      <middleName>MiddleName31</middleName>
+      <lastName>LastName31</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName32</firstName>
+      <middleName>MiddleName32</middleName>
+      <lastName>LastName32</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName33</firstName>
+      <middleName>MiddleName33</middleName>
+      <lastName>LastName33</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName34</firstName>
+      <middleName>MiddleName34</middleName>
+      <lastName>LastName34</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName35</firstName>
+      <middleName>MiddleName35</middleName>
+      <lastName>LastName35</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName36</firstName>
+      <middleName>MiddleName36</middleName>
+      <lastName>LastName36</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName37</firstName>
+      <middleName>MiddleName37</middleName>
+      <lastName>LastName37</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName38</firstName>
+      <middleName>MiddleName38</middleName>
+      <lastName>LastName38</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName39</firstName>
+      <middleName>MiddleName39</middleName>
+      <lastName>LastName39</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[2]"/>
+    </client>
+    <client>
+      <firstName>FirstName0</firstName>
+      <middleName>MiddleName0</middleName>
+      <lastName>LastName0</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName1</firstName>
+      <middleName>MiddleName1</middleName>
+      <lastName>LastName1</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName2</firstName>
+      <middleName>MiddleName2</middleName>
+      <lastName>LastName2</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName3</firstName>
+      <middleName>MiddleName3</middleName>
+      <lastName>LastName3</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName4</firstName>
+      <middleName>MiddleName4</middleName>
+      <lastName>LastName4</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName5</firstName>
+      <middleName>MiddleName5</middleName>
+      <lastName>LastName5</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName6</firstName>
+      <middleName>MiddleName6</middleName>
+      <lastName>LastName6</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName7</firstName>
+      <middleName>MiddleName7</middleName>
+      <lastName>LastName7</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName8</firstName>
+      <middleName>MiddleName8</middleName>
+      <lastName>LastName8</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName9</firstName>
+      <middleName>MiddleName9</middleName>
+      <lastName>LastName9</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName10</firstName>
+      <middleName>MiddleName10</middleName>
+      <lastName>LastName10</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName11</firstName>
+      <middleName>MiddleName11</middleName>
+      <lastName>LastName11</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName12</firstName>
+      <middleName>MiddleName12</middleName>
+      <lastName>LastName12</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName13</firstName>
+      <middleName>MiddleName13</middleName>
+      <lastName>LastName13</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName14</firstName>
+      <middleName>MiddleName14</middleName>
+      <lastName>LastName14</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName15</firstName>
+      <middleName>MiddleName15</middleName>
+      <lastName>LastName15</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName16</firstName>
+      <middleName>MiddleName16</middleName>
+      <lastName>LastName16</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName17</firstName>
+      <middleName>MiddleName17</middleName>
+      <lastName>LastName17</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName18</firstName>
+      <middleName>MiddleName18</middleName>
+      <lastName>LastName18</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName19</firstName>
+      <middleName>MiddleName19</middleName>
+      <lastName>LastName19</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName20</firstName>
+      <middleName>MiddleName20</middleName>
+      <lastName>LastName20</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName21</firstName>
+      <middleName>MiddleName21</middleName>
+      <lastName>LastName21</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName22</firstName>
+      <middleName>MiddleName22</middleName>
+      <lastName>LastName22</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName23</firstName>
+      <middleName>MiddleName23</middleName>
+      <lastName>LastName23</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName24</firstName>
+      <middleName>MiddleName24</middleName>
+      <lastName>LastName24</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName25</firstName>
+      <middleName>MiddleName25</middleName>
+      <lastName>LastName25</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName26</firstName>
+      <middleName>MiddleName26</middleName>
+      <lastName>LastName26</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName27</firstName>
+      <middleName>MiddleName27</middleName>
+      <lastName>LastName27</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName28</firstName>
+      <middleName>MiddleName28</middleName>
+      <lastName>LastName28</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+    <client>
+      <firstName>FirstName29</firstName>
+      <middleName>MiddleName29</middleName>
+      <lastName>LastName29</lastName>
+      <employmentType reference="../../../employmentTypes/employmentType[3]"/>
+    </client>
+  </clients>
+</configuration>

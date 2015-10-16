@@ -1,0 +1,12 @@
+<html>
+<body>
+	Dear <b>${user.firstName}</b>,<br>
+	<br>
+	Your password has been successfully reset<br>
+	New password is <b>${user.password}</b><br>
+	Please do not reply to this message.<br>
+	<br>
+	Thank you,<br>
+	CRM Development Team.<br>
+</body>
+</html>

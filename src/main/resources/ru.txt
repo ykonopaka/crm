@@ -1,0 +1,1730 @@
+#Title
+application.title = Кредитный Дом. Система управления клиентами
+
+#Login and forgot password pages
+label.username = Имя
+label.password = Пароль
+label.email = Почтовый адрес
+link.forgotPassword = Забыли пароль?
+link.backToLogin = Назад к входу
+message.forgot.password = Пожалуйста, отправьте свой почтовый адрес и новый пароль будет выслан на него
+message.incorrect.credentials = Имя пользователя и (или) пароль неверны
+message.expired.credentials = Срок действия пароля закончился
+message.session.expired = Ваша сессия была закрыта
+message.locked.account = Ваша учетная запись заблокирована
+message.disabled.account = Ваша учетная запись удалена администратором
+message.password.email.sent = Новый пароль был выслан на увазанный Вами почтовый адрес
+
+#Navigation Bar
+label.navigation.dashboard = Состояние
+label.navigation.dashboard.first = Состояние 1
+label.navigation.dashboard.second = Состояние 2
+label.navigation.dashboard.third = Состояние 3
+label.navigation.workflow = Рабочий процесс
+label.navigation.workflow.home = Домашняя
+label.navigation.workflow.calls = Звонки
+label.navigation.workflow.clients = Клиенты
+label.navigation.workflow.deals = Заявки
+label.navigation.reports = Отчеты
+label.navigation.reports.first = Отчет 1
+label.navigation.reports.second = Отчет 2
+label.navigation.reports.third = Отчет 3
+label.navigation.administration = Администрирование
+label.navigation.administration.home = Домашняя
+label.navigation.administration.users = Пользователи
+label.navigation.administration.offices = Офисы
+label.navigation.administration.phone.numbers = Телефоны
+label.navigation.administration.information.sources = Источники информации
+label.navigation.administration.employment.types = Типы трудоустройств
+label.navigation.my.account = Мой аккаунт
+label.navigation.my.account.settings = Настройки
+label.navigation.my.account.change.password = Изменить пароль
+label.navigation.logout = Выход
+
+#Top Search Bar
+label.topsearch.default.text = Поиск
+label.topsearch.option.all = Все
+label.topsearch.option.calls = Звонки
+label.topsearch.option.clients = Клиенты
+label.topsearch.option.deals = Заявки
+
+#Footer
+label.footer.copyright = Admin Skin Copyright Internet Dreams Ltd.
+label.footer.copyright.link = www.netdreams.co.uk
+label.footer.copyright.link.name = www.netdreams.co.uk
+label.footer.copyright.rights = Все права защищены
+
+#Account Settings
+label.header.change.user.settings = Изменить мои данные
+label.change.my.user.settings.userid = Номер пользователя
+label.change.my.user.settings.username = Имя пользователя
+label.change.my.user.settings.first.name = Имя
+label.change.my.user.settings.last.name = Фамилия
+label.change.my.user.settings.email = E-mail
+label.change.my.user.settings.office = Офис
+label.change.my.user.settings.role = Роль
+label.change.my.user.settings.password = Пароль
+link.change.password = Изменить пароль
+link.add.new.office.when.changing.my.user.settings = Добавить новый офис
+your.account.settings.have.been.updated = Ваша учетная запись была обновлена
+your.account.settings.have.not.been.updated = Ваша учетная запись не была обновлена - введены недопустимые значения
+your.account.settings.have.been.updated.with.no.office = Ваша учетная запись была обновлена, но не добавлена ни в один офис. Вы можете сделать это позже.
+
+#Administration -> Users
+label.header.manage.users = Управление пользователями
+link.add.new.user = Добавить нового пользователя
+link.connected.users = Подключенные пользователи
+label.users.table.id.column = Номер пользователя
+label.users.table.username.column = Учетная запись
+label.users.table.firstname.column = Имя
+label.users.table.lastname.column = Фамилия
+label.users.table.email.column = E-mail
+label.users.table.office.column = Офис
+label.users.table.options.column = Опции
+label.users.table.options.no.office = Нет офиса
+popup.users.table.options.edit = Изменить
+popup.users.table.options.delete = Удалить
+popup.users.table.options.show.login.history = Показать историю входов
+popup.users.table.options.enable.calls = Звонки
+
+#Administration -> Users -> Add New User
+label.header.add.user = Добавить пользователя
+label.add.new.user.settings.username = Учетная запись
+label.add.new.user.settings.first.name = Имя
+label.add.new.user.settings.last.name = Фамилия
+label.add.new.user.settings.password = Пароль
+label.add.new.user.settings.confirm.password = Подтвердите пароль
+label.add.new.user.settings.email = E-mail
+label.add.new.user.settings.office = Офис
+label.add.new.user.settings.role = Роль
+link.add.new.office.when.creating.user = Добавить новый офис 
+user.has.been.created.message = Учетная запись пользователя успешно создана
+user.has.been.created.with.no.office = Учетная запись пользователя успешно создана, но не добавлена ни в один офис. Вы можете сделать это позже
+user.has.not.been.created.message = Учетная запись пользователя не была создана - введены недопустимые значения
+
+#Administration -> Users -> Edit User
+label.header.edit.user = Изменить пользователя
+label.edit.user.settings.id = Номер пользователя
+label.edit.user.settings.username = Учетная запись
+label.edit.user.settings.first.name = Имя
+label.edit.user.settings.last.name = Фамилия
+label.edit.user.settings.password = Пароль
+label.edit.user.settings.confirm.password = Подтвердите пароль
+label.edit.user.settings.email = Email
+label.edit.user.settings.office = Офис
+label.edit.user.settings.role = Роль
+link.add.new.office.when.editing.user = Добавить новый офис  
+user.has.been.updated.message = Учетная запись пользователя успешно обновлена
+user.has.been.updated.with.no.office = Учетная запись пользователя успешно обновлена, но не добавлена ни в один офис. Вы можете сделать это позже
+user.has.not.been.updated.message = Учетная запись пользователя не была обновлена - введены недопустимые значения
+
+#Administration -> Users -> Delete User
+label.header.delete.user = Удалить пользователя
+label.delete.user.settings.id = Номер пользователя
+label.delete.user.settings.username = Учетная запись
+label.delete.user.settings.first.name = Имя
+label.delete.user.settings.last.name = Фамилия
+label.delete.user.settings.email = Email
+label.delete.user.settings.office = Офис
+label.delete.user.no.office = Не добавлен в офис
+user.has.been.deleted.message = Учетная запись пользователя успешно удалена
+admin.user.can.not.be.deleted.message = Учетная запись главного администратора не может быть удалена 
+
+#Administration -> Users -> Login History
+label.header.loginhistory.users = История входов в систему
+label.loginhistory.table.id.column = Номер входа
+label.loginhistory.table.date.column = Дата
+link.manage.users = Назад к управлению пользователями
+
+#Account Settings -> Users -> Connected Users
+label.header.connected.users = Подключенные пользователи на данный момент
+link.manage.users.on.connected.users = Управление пользователями
+label.connected.users.table.id.column = Номер пользователя
+label.connected.users.table.username.column = Учетная запись
+label.connected.users.table.firstname.column = Имя
+label.connected.users.table.lastname.column = Фамилия
+label.connected.users.table.email.column = Email
+label.connected.users.table.office.column = Офис
+label.connected.users.table.options.column = Опции
+label.connected.users.table.options.no.office = Не добавлен в офис
+popup.users.table.options.delete = Удалить
+popup.connected.users.table.options.disconnect = Отключить
+user.has.been.disconnected.message = Пользователь был успешно отключен
+
+#Account Settings -> Change Password
+label.header.change.password = Изменить пароль
+label.change.password.current.password = Текущий пароль
+label.change.password.new.password = Новый пароль
+label.change.password.confirm.new.password = Подтвердите пароль
+password.has.been.changed.message = Пароль успешно обновлен
+
+#Administration -> Offices
+label.header.manage.offices = Управление офисами
+link.add.new.office = Добавить новый офис
+label.offices.table.id.column = Номер
+label.offices.table.name.column = Имя офиса
+label.offices.table.description.column = Описание
+label.offices.table.address.column = Адрес
+label.offices.table.options.column = Опции
+
+#Administration -> Offices -> Add New Office
+label.header.add.office = Добавить новый офис
+label.add.new.office.name = Имя
+label.add.new.office.address = Адрес
+label.add.new.office.description = Описание
+office.has.been.created.message = Офис был успешно создан
+office.has.not.been.created.validation = Офис не был успешно создан - введены недопустимые значения
+
+#Administration -> Offices -> Edit Office
+label.header.edit.office = Изменить офис
+label.edit.office.name = Имя
+label.edit.office.address = Адрес
+label.edit.office.description = Описание
+office.has.been.updated.message = Офис был успешно изменен
+office.has.not.been.updated.validation = Офис не был изменен - введены недопустимые значения
+
+#Administration -> Offices -> Delete Office
+label.header.delete.office = Удалить офис
+label.delete.office.name = Имя
+label.delete.office.address = Адрес
+label.delete.office.description = Описание
+office.has.been.deleted.message = Офис был успешно удален
+
+#Administration -> Phone Numbers
+label.header.manage.phone.numbers = Управление телефонными номерами
+link.add.new.phone.number = Добавить телефонный номер
+label.phone.numbers.table.options.no.office = Нет офисов
+label.phone.numbers.table.id.column = Номер в системе
+label.phone.numbers.table.phone.column = Телефонный номер
+label.phone.numbers.table.description.column = Описание
+label.phone.numbers.table.office.column = Офис
+label.phone.numbers.table.ismobile.column = Мобильный номер
+label.phone.numbers.table.options.column = Опции
+label.mobile.phone.number.yes = Да
+label.mobile.phone.number.no = Нет
+
+#Administration -> Phone Numbers -> Add Phone Number
+label.header.add.phone.number = Добавить номер телефона
+label.add.new.phone.number = Номер телефона
+label.add.new.phone.number.description = Описание
+label.add.new.phone.number.office = Офис
+option.not.selected.office.add.new.phone.number = Не добавлен в офис
+link.add.new.office.when.creating.phone.number = Добавить офис
+label.add.new.phone.number.is.mobile = Мобильный
+phone.number.has.not.been.created.validation = Номер телефона не был создан - введены недопустимые значения
+phone.number.has.been.created.with.no.office = Номер телефона был успешно создан, но он не привязан к офису
+phone.number.has.been.created = Номер телефона был успешно создан
+
+#Administration -> Phone Numbers -> Delete Phone Number
+label.header.delete.phone.number = Удалить номер
+label.delete.phone.number.phoneNumber = Номер телефона
+label.delete.phone.number.description = Описание
+label.delete.phone.number.is.mobile = Мобильный
+label.delete.phone.number.office = Офис
+label.users.table.options.no.office = Не добавлен в офис
+phone.number.has.been.deleted.message = Номер телефона был удален
+
+#Administration -> Phone Numbers -> Edit Phone Number
+label.header.edit.phone.number = Изменить номер телефона
+label.edit.phone.number = Номер телефона
+label.edit.phone.number.description = Описание
+label.edit.phone.number.is.mobile = Мобильный
+label.edit.phone.number.office = Офис
+link.add.office.when.updating.phone.number = Добавить офис
+phone.number.has.not.been.updated.validation = Номер телефона не был изменен - введены недопустимые значения
+phone.number.has.been.updated.message = Номер телефона был успешно изменен
+
+#Administration -> Information Sources
+label.header.manage.info.source = Управление источниками информации
+link.add.new.info.source = Добавить новый источник информации
+label.info.sources.table.id.column = Номер
+label.info.sources.table.type.column = Тип
+label.info.sources.table.details.column = Детали
+label.info.sources.table.options.column = Опции
+popup.info.sources.table.options.edit = Изменить
+popup.info.sources.table.options.delete = Удалить
+
+#Administration -> Information Sources -> Add Information Sources
+label.header.add.info.source = Добавить источник информации
+label.add.new.info.source.type = Тип
+label.add.new.info.source.details = Детали
+info.source.has.not.been.created.validation = Источник информации не был создан - введены недопустимые значения
+info.source.has.been.created = Источник информации был успешно добавлен
+
+#Administration -> Information Sources -> Edit Information Sources
+label.header.edit.info.source = Изменить источник информации
+label.edit.info.source.type = Тип
+label.edit.info.source.details = Детали
+info.source.has.not.been.updated.validation = Источник информации не был изменен - введены недопустимые значения
+info.source.has.been.updated = Источник информации был успешно изменен
+
+#Administration -> Information Sources -> Delete Information Sources
+label.header.delete.info.source = Удалить источник информации
+label.delete.info.source.id = Номер
+label.delete.info.source.type = Тип 
+label.delete.info.source.details = Детали
+info.source.has.been.deleted.message = Источник информации был успешно удален
+
+#Administration -> Employment Types
+label.header.manage.empl.type = Управление типами трудоустройств
+link.add.new.employment.type = Добавить новый тип трудоустройства
+label.employment.type.table.id.column = Номер
+label.employment.type.table.name.column = Имя
+label.employment.type.table.description.column = Description
+label.employment.type.table.options.column = Опции
+popup.employment.types.table.options.edit = Изменить
+popup.employment.types.table.options.delete = Удалить
+
+#Administration -> Employment Types - > Add Employment Type
+label.header.add.empl.type = Добавить тип трудоустройств
+label.add.new.employment.type.description = Описание
+employment.type.has.not.been.created.validation = Тип трудоустройства не был создан - введены недопустимые значения
+employment.type.has.been.created.message = Тип трудоустройства был успешно создан
+
+#Administration -> Employment Types - > Edit Employment Type
+label.header.edit.empl.type = Изменить тип трудоустройства
+label.edit.employment.type.description = Описание
+employment.type.has.not.been.changed.validation = Тип трудоустройства не был изменен - введены недопустимые значения
+employment.type.has.been.changed.validation = Тип трудоустройства был успешно изменен
+
+#Administration -> Employment Types - > Delete Employment Type
+label.header.delete.empl.type = Удалить тип трудоустройства
+label.delete.employment.type.id = Номер
+label.delete.employment.type.description = Описание
+employment.type.has.been.deleted.message = Тип трудоустройства был успешно удален
+
+#Workflow -> Clients
+label.header.manage.client = Управление клиентами
+link.add.new.client = Добавить нового клиента
+label.clients.table.id.column = Номер
+label.clients.table.last.name = Фамилия
+label.clients.table.first.name = Имя
+label.clients.table.middle.name = Отчество
+label.clients.table.registration.date = Дата регистрации
+label.clients.table.options.column = Опции
+popup.clients.table.options.edit = Изменить
+popup.clients.table.options.delete = Удалить
+popup.clients.table.options.view = Просмотреть
+popup.clients.table.options.create.call = Создать звонок
+
+#Workflow -> Clients -> Add a Client
+label.header.add.client = Добавить нового клиента
+label.add.new.client.last.name = Фамилия
+label.add.new.client.first.name = Имя
+label.add.new.client.middle.name = Отчество
+label.add.new.client.employment.type = Тип трудоустройства
+label.add.new.client.phone.numbers = Номера телефонов
+client.has.been.created.message = Клиент был успешно создан
+label.add.new.client.choose.employment.type.select = Выберите тип трудоустройства
+label.add.new.client.choose.employment.type.input = Или укажите свой вариант
+label.no.predefined.employment.types = Нет типов трудоустройств
+
+#Workflow -> Clients -> Delete Client
+label.header.delete.client = Удалить клиента
+label.delete.client.id = Номер
+label.delete.client.last.name = Фамилия
+label.delete.client.first.name = Имя
+label.delete.client.middle.name = Отчество
+client.has.been.deleted.message = Клиент был успешно удален
+
+#Workflow -> Clients -> Edit Client
+label.header.edit.client = Изменить данные клиента
+label.edit.client.last.name = Фамилия
+label.edit.client.first.name = Имя
+label.edit.client.middle.name = Отчество
+label.edit.client.employment.type = Тип трудоустройства
+label.edit.client.phone.numbers = Номера телефонов
+link.manage.client.phones.when.editing.client = Управление номерами телефонов
+
+#Workflow -> Clients -> View Client
+label.header.view.client = Простмотр данных клиента
+label.view.client.id = ID
+label.view.client.last.name = Фамилия
+label.view.client.first.name = Имя
+label.view.client.middle.name = Отчество
+label.view.client.phone.numbers = Номера телефонов
+label.view.client.employment.type = Тип трудоустройства
+
+#Workflow -> Clients -> Edit Client -> Phone Numbers -> Manage
+label.header.manage.client.phone.numbers = Управление номерами телефонов
+link.add.new.client.phone.number = Добавить номер телефона клиента
+label.client.phone.numbers.table.id.column = Номер записи
+label.client.phone.numbers.table.phone.column = Номер телефона
+label.client.phone.numbers.table.description.column = Описание
+label.client.phone.numbers.table.options.column = Опции
+popup.client.phone.table.options.edit = Изменить
+popup.client.phone.table.options.delete = Удалить
+client.has.been.changed.message = Данные клиента были успешно изменены
+client.has.not.been.changed.message.validation = Данные клиента были успешно изменены - введены недопустимые значения
+
+#Workflow -> Clients -> Edit Client -> Phone Numbers -> Add
+label.header.add.client.phone.number = Добавить номер телефона клиента
+label.add.new.client.phone.number = Номер телефона
+label.add.new.client.phone.number.description = Описание
+client.phone.number.has.been.created.message = Номер телефона был успешно добавлен
+client.phone.number.has.not.been.created.validation = Номер телефона не был добавлен - введены недопустимые значения
+
+#Workflow -> Clients -> Edit Client -> Phone Numbers -> Edit
+label.header.edit.client.phone.number = Изменить номер телефона клиента
+label.edit.client.phone.number = Номер телефона
+label.edit.client.phone.number.description = Описание
+client.phone.number.has.been.changed.message = Номер телефона был успешно изменен
+client.phone.number.has.not.been.changed.validation = Номер телефона не был изменен - введены недопустимые значения
+
+#Workflow -> Clients -> Edit Client -> Phone Numbers -> Delete
+label.header.delete.client.phone.number = Удалить номер телефона клиента
+label.delete.client.phone.number.phoneNumber.id = Номер записи
+label.delete.client.phone.number.phoneNumber = Номер телефона
+label.delete.client.phone.number.description = Описание
+client.phone.number.has.been.deleted.message = Номер телефона не был успешно удален
+
+#Workflow -> Calls -> Add -> Step 1
+label.header.add.call.step1.client = Шаг 1. Добавить клиента
+label.add.call.new.client.last.name = Фамилия (если доступно)
+label.add.call.new.client.first.name = Имя
+label.add.call.new.client.middle.name = Отчество (если доступно)  
+label.add.call.new.client.employment.type = Тип трудоустройства
+label.add.call.new.client.choose.employment.type.select = Выберите
+label.add.call.new.client.choose.employment.type.input = Или добавьте новый
+label.add.call.new.client.age = Возраст (если доступно)
+
+#Workflow -> Calls -> Add -> Step 2
+label.header.add.call.step2.office.phone = Шаг 2. На какой номер дозвонился клиент?
+label.add.new.call.choose.office.phone.number = Набраный номер
+mobile.phone.label = Мобильный
+
+#Workflow -> Calls -> Add -> Step 3
+label.header.add.call.step3.credit = Шаг 3. Каким кредитом заинтересовался клиент? 
+label.add.new.call.credit.amount.money = Сумма
+label.add.new.call.credit.type = Тип кредита
+label.add.new.call.currency.type = Валюта
+
+#Workflow -> Calls -> Add -> Step 4
+label.header.add.call.step4.info.source = Шаг 4. Откуда клиент узнал о нас?
+label.add.call.information.source = Источник информации
+
+#Workflow -> Calls -> Add -> Step 5
+label.header.add.call.step5.additional.info = Шаг 5. Дополнительная информация
+label.add.call.additional.info.were.credits.earlier = Были ли кредиты ранее?
+label.add.call.additional.info.banks = Банки, в которые обращался клиент
+label.add.call.additional.info.description = Дополнительная информация
+label.add.call.additional.info.interests = Интерес клиента
+
+#Workflow -> Calls -> Add -> Step 6
+label.header.add.call.step6.client.phone.number = Шаг 6. Номер телефона клиента
+label.add.call.new.client.phone.number = Номер
+label.add.call.new.client.phone.description = Описание
+label.add.call.new.client.phone.is.hidden = Номер скрыт
+label.add.call.new.client.phone.has.client.come = Клиент пришел в офис
+call.has.been.created.message = Звонок успешно создан
+
+#Workflow -> Manage Calls
+label.header.manage.calls = Управление звонками
+link.add.new.call = Добавить новый звонок
+label.calls.table.id.column = ID
+label.calls.table.name = Имя
+label.calls.table.client.phone.number = Номер телефона
+label.calls.table.date = Дата
+label.calls.table.options.column = Опции
+popup.calls.table.options.edit = Редактировать
+popup.calls.table.options.delete = Удалить
+popup.calls.table.options.view = Просмотреть
+
+#Workflow -> Delete Call
+label.header.delete.call = Удалить звонок
+label.delete.call.id = ID
+label.delete.call.client.name = Имя клиента
+label.delete.call.date = Дата
+label.delete.call.client.phone.number = Номер телефона клиента
+label.delete.call.office.phone.number = Набраный номер
+label.delete.call.credit.type = Тип кредита
+label.delete.call.credit.amount = Сумма
+label.delete.call.comments = Комментарии
+label.delete.call.worker.name = Имя оператора
+call.has.been.deleted.message = Звонок был удален
+
+#Workflow -> View Call
+label.header.view.call = Просмотреть детали звонка
+label.view.call.id = ID
+label.view.call.client.name = Имя клиента
+label.view.call.date = Дата
+label.view.call.client.phone.number = Номер телефона клиента
+label.view.call.office.phone.number = Набраный номер
+label.view.call.credit.type = Тип кредита
+label.view.call.credit.amount = Сумма
+label.view.call.comments = Комментарии
+label.view.call.worker.name = Имя оператора
+
+#Workflow -> Manage Deals
+label.header.manage.deals = Управление заявками
+link.add.new.deal = Добавить заявку
+label.deals.table.id = ID
+label.deals.table.name = Имя 
+label.deals.table.job.type = Тип работы
+label.deals.table.credit.amount = Сумма кредита
+label.deals.table.credit.term = Срок кредита
+label.deals.table.date = Дата
+label.deals.table.options.column = Опции
+popup.deals.table.options.view = Просмотреть
+popup.deals.table.options.edit = Редактировать 
+popup.deals.table.options.delete = Удалить
+
+#Dashboard
+label.header.welcome = Добро пожаловать
+label.header.dashboard = Сводка
+
+#Workflow
+label.header.workflow = Рабочий процесс
+label.header.calls.workflow = Звонки
+link.header.workflow.call.add = Добавить звонок
+link.header.workflow.call.manage = Управление звонками
+
+label.header.clients.workflow = Клиенты
+link.header.workflow.client.add = Добавить клиента
+link.header.workflow.client.manage = Управление клиентами
+
+label.header.deals.workflow = Заявки
+link.header.workflow.deal.add = Добавить заявку
+link.header.workflow.deal.manage = Управление заявками
+
+#Reports
+label.header.reports = Отчеты
+
+#Administration
+label.header.administration = Администрирование
+
+label.header.user.administration = Пользователи
+link.header.administration.user.add = Добавить нового пользователя
+link.header.administration.user.manage = Управление существующими пользователями
+
+label.header.office.administration = Офисы
+link.header.administration.office.add = Добавить новый офис
+link.header.administration.office.manage = Управление существующими офисами
+
+label.header.phone.numbers.administration = Номера телефонов
+link.header.administration.phone.numbers.add = Добавить новый номер телефона
+link.header.administration.phone.numbers.manage = Управление существующими номерами телефонов
+
+label.header.information.source.administration = Источники информации
+link.header.administration.information.source.add = Добавить новый источник
+link.header.administration.information.source.manage = Управление существующими источниками
+
+label.header.employment.type.administration = Типы трудоустройств
+link.header.administration.employment.type.add = Добавить новый тип
+link.header.administration.employment.type.manage = Управление существующими типами
+
+#Roles
+label.administrator.role = Администратор
+label.operator.role = Оператор
+label.observer.role = Наблюдатель
+
+#Information Sources Types
+label.newspaper.source.type = Газета
+label.stream.stick.source.type = Потоковая поклейка
+label.radio.source.type = Радио
+label.tv.source.type = Телевидение
+label.recommendation.source.type = Рекомендации 
+label.billboard.source.type = Билборд
+label.outdoor.ad.source.type = Наружная реклама
+label.other.source.type = Другое
+
+#Credit Types
+label.plegde.credit.type = Залоговый
+label.non.pledge.with.revenue.report = Без залога (со справкой)
+label.non.pledge.without.revenue.report = Без залога (без справки)
+
+#Employment Types
+label.official.worker.employment.type = Работающий официально 
+label.non.official.worker.employment.type = Работающий неофициально
+label.private.entrepreneur.employment.type = Частный предприниматель
+label.other.employment.type = Другое
+
+#Credit Objective Types
+label.house.renovation.credit.objective.type = Ремонт дому
+label.buying.furniture.credit.objective.type = Купівля меблів
+label.buying.technique.credit.objective.type = Купівля техніки
+label.rest.credit.objective.type = Відпочинок
+
+#Education Types
+label.high.education.type = Вища
+label.high.not.finished.education.type = Незакінчена вища
+label.secondary.education.type = Середня
+label.secondary.special.education.type = Середня спеціальна
+
+#Military Service Types
+label.already.has.been.military.service.type = Cлужив
+label.liable.for.military.service.type = Війсковозобов'язаний
+label.non.liable.for.military.service.type = Не війсковозобов'язаний
+
+#Marital Status Types
+label.married.marital.status.type = Одружений(на)
+label.civil.married.marital.status.type = Громадянський брак
+label.non.married.marital.status.type = Неодружений(на)
+label.divorced.marital.status.type = Розлучений(на)
+label.widow.marital.status.type = Вдівець/вдова
+
+#Business Line Types
+label.law.business.line.type = Правоохоронні органи
+label.personal.services.business.line.type = Побутові послуги (хімчистки, ательє)
+label.housing.business.line.type = ЖКГ
+label.restaurants.business.line.type = Ресторани, кафе, фастфуд
+label.finance.business.line.type = Фінанси, кредит, страхування
+label.brokerage.business.line.type = Посредницька, рієлторська діяльність
+label.engineering.business.line.type = Машинобудування та металургія
+label.entertainment.business.line.type = Розважальний, ігорний, шоу-бізнес
+label.legal.business.line.type = Юридичні та нотаріальні послуги
+label.chemicals.business.line.type = Хімія, парфюмерія та фармацевтика
+label.farming.business.line.type = Сільське господарство
+label.forces.business.line.type = Збройні сили
+label.light.industry.business.line.type = Легка промисловість
+label.food.business.line.type = Харчова промисловість
+label.construction.business.line.type = Будівництво та будматеріали
+label.fitness.business.line.type = Салони краси, фітнес-центри
+label.art.business.line.type = Культура та мистецтво
+label.printing.business.line.type = Поліграфічна промисловість
+label.information.business.line.type = Інформаційні технології
+label.security.business.line.type = Охоронне підприємство
+label.publishing.business.line.type = Видавнича справа
+label.health.business.line.type = Охорона здоров'я
+label.public.business.line.type = Державна служба
+label.forest.business.line.type = Лісове господарство
+label.transport.business.line.type = Транспорт
+label.wholesale.business.line.type = Оптова торгівля 
+label.retail.business.line.type = Роздрібна торгівля
+label.science.business.line.type = Наука
+label.advertising.business.line.type = Реклама, PR, ЗМІ
+label.energy.business.line.type = ТЕК
+label.relationship.business.line.type = Звязок
+label.other.business.line.type = Інше
+
+#Company Size Types
+label.small.company.size.type = Маленька - до 10
+label.middle.company.size.type = Середня - до 100
+label.large.company.size.type = Велика - більше 100
+
+#Contact Person Types
+label.wife.husband.contact.person.type = Дружина/чоловік
+label.boyfriend.girlfriend.contact.person.type = Хлопець/дівчина
+label.father.mother.contact.person.type = Батько/мати
+label.grandfather.grandmother.contact.person.type = Дідусь/бабуся
+label.son.daughter.contact.person.type = Син/донька
+label.brother.sister.contact.person.type = Брат/сестра
+label.relative.husband.contact.person.type = Родич
+label.friend.husband.contact.person.type = Друг
+label.familiar.husband.contact.person.type = Знайомий
+label.employee.husband.contact.person.type = Співробітник
+label.head.husband.contact.person.type = Начальник
+label.neighbor.husband.contact.person.type = Сусід
+label.other.husband.contact.person.type = Інше
+
+#Conviction Types
+label.presense.conviction.type = Так, притягувався(лася)
+label.absense.conviction.type = Ні, не притягувався(лася)
+
+#Gender Types
+label.male.gender.type = Жіноча
+label.female.gender.type = Чоловіча
+
+#Region Types
+label.01.region.type = АР Крим
+label.02.region.type = Вінницька область
+label.03.region.type = Волинська область
+label.04.region.type = Дніпропетровська область
+label.05.region.type = Донецька область
+label.06.region.type = Житомирська область
+label.07.region.type = Закарпатська область
+label.08.region.type = Запорізька область
+label.09.region.type = Івано-Франківська область
+label.10.region.type = Київська область
+label.11.region.type = Кіровоградська область
+label.12.region.type = Луганська область
+label.13.region.type = Львівська область
+label.14.region.type = Миколаївська область
+label.15.region.type = Одеська область
+label.16.region.type = Полтавська область
+label.17.region.type = Рівненська область
+label.18.region.type = Сумська область
+label.19.region.type = Тернопільська область
+label.20.region.type = Харківська область
+label.21.region.type = Херсонська область
+label.22.region.type = Хмельницька область
+label.23.region.type = Черкаська область
+label.24.region.type = Чернігівська область
+label.25.region.type = Чернівецька область
+
+#Property Types
+label.owner.property.type = Власна
+label.lease.property.type = Оренда
+label.service.area.property.type = Службова площа
+label.living.with.parents.property.type = Мешкаю з родичами
+label.living.in.hall.property.type = Мешкаю у гуртожитку
+
+#Position Types
+label.specialist.position.type = Спеціаліст
+label.manager.position.type = Керівник
+label.top.manager.position.type = Вище керівництво
+
+#Organization Types
+label.at.organization.type = АТ
+label.pat.organization.type = ПАТ
+label.prat.organization.type = ПрАТ
+label.tov.organization.type = ТОВ
+label.zat.organization.type = ЗАТ
+label.pp.organization.type = ПП
+label.fop.organization.type = ФОП
+label.sp.organization.type = СП
+label.derzhp.organization.type = ДержП
+label.dochP.organization.type = ДочірнєП
+label.ip.organization.type = ІП
+label.kp.organization.type = КП
+label.fg.organization.type = ФГ
+
+#Job Types
+label.ouap.job.type = Офіційно на юр. особу
+label.ounp.job.type = Офіційно на ФО-П
+label.nouap.job.type = Неофіційно на юр. особу
+label.nounp.job.type = Неофіційно на ФО-П
+label.np.job.type = ФО-П
+label.retiree.job.type = Пенсіонер
+label.wr.job.type = Працюючий пенсіонер
+label.sep.job.type = Самозайнята особа
+label.sailor.job.type = Моряк
+
+#Income Types
+label.ounp.income.type = Неофіційно на юр.особу
+label.nounp.income.type = Неофіційно на ФО-П
+label.np.income.type = ФО-П
+label.leasing.income.type = Дохід від оренди, депозитів тощо
+
+#Property History Types
+label.bought.history.type = Купівля
+label.privatization.history.type = Приватизація
+label.inherited.history.type = Успадкування
+label.spouse.history.type = Оформлена на чоловіка/дружину
+label.parents.history.type = Оформлена на батьків
+label.relatives.history.type = Оформлена на родичів
+
+#Credit Form Type
+label.mortgage.credit.form.type = Іпотека
+label.car.credit.form.type = Авто
+label.consumer.credit.form.type = Споживчий кредит
+label.securities.loan.credit.form.type = Кредит під заставу
+label.goods.credit.form.type = Товари в кредит
+label.other.credit.form.type = Інше
+
+#Currencies
+label.uah.currency.type = UAH
+label.usd.currency.type = USD
+label.eur.currency.type = EUR
+
+#Interests
+label.interested.interest.type = Да
+label.between.interest.type = Да/Нет
+label.not.interested.interest.type = Нет
+
+#Validation messages
+Pattern.user.email = Вы ввели неправильный E-mail
+user.email.notExist = Пользователь с таким E-mail не существует
+user.email.suchEmailAlreadyExists = Пользователь с таким E-mail уже существует
+Pattern.user.firstName = Имя должно состоять из букв только
+Pattern.user.lastName = Фамилия должна состоять из букв только 
+user.role.noRole = Пользователю не незначена ни одна роль
+user.role.adminUserHasNoAdminRole = Необходимо назначить роль Администратора
+user.password.notMatchCurrentPassword = Данный пароль не совпадает с текущим
+user.password.newPasswordsNotMatch = Пароли не совпадают
+user.username.suchLoginAlreadyExists = Пользователь с таким логином уже существует
+Size.user.lastName = Длина введеного значения должна находиться в пределах от 2 до 30
+Size.user.firstName = Длина введеного значения должна находиться в пределах от 2 до 30
+Size.user.confirmNewPassword = Длина пароля должна находиться в пределах от 2 до 30
+Size.user.newPassword = Длина пароля должна находиться в пределах от 2 до 30
+Size.user.username = Длина введеного значения должна находиться в пределах от 2 до 30
+Size.office.name = Длина введеного значения должна находиться в пределах от 2 до 30
+Size.office.address = Длина введеного значения должна находиться в пределах от 2 до 30
+Size.office.description = Длина введеного значения должна находиться в пределах от 2 до 30
+Size.phoneNumber.description = Длина введеного значения должна находиться в пределах от 2 до 30
+Size.infoSource.details = Длина введеного значения должна находиться в пределах от 2 до 30
+Pattern.phoneNumber.phoneNumber = Введеное значение не является номером телефона
+user.username.AdminCanNotBeDeleted = Корневой администратор не может быть удален
+Size.client.lastName = Длина введеного значения должна находиться в пределах от 2 до 30
+Size.client.firstName = Длина введеного значения должна находиться в пределах от 2 до 30
+Size.client.middleName = Длина введеного значения должна находиться в пределах от 2 до 30
+Pattern.client.firstName = Имя должно состоять из букв только
+Pattern.client.lastName = Фамилия должна состоять из букв только
+Pattern.client.middleName = Отчество должно состоять из букв только
+Size.client.specificEmploymentType = Длина введеного значения должна находиться в пределах от 2 до 30
+Pattern.clientPhoneNumber.phoneNumber = Введеное значение не является номером телефона
+Pattern.callWrapper.fClientPhoneNumber = Введеное значение не является номером телефона
+typeMismatch.client.age = Введеное значение не является числом
+Range.client.age = Значение должно лежать в диапазоне от 16 до 100
+
+#Workflow -> Deals -> Add -> Step 1 (Credit Info)
+label.header.add.deal = Добавить Анкету
+label.header.add.deal.step1.credit = Крок 1. Загальна інформація про кредит
+label.add.new.deal.credit.amount.money = Сума кредита, грн.
+label.add.new.deal.credit.term = Строк, місяців
+label.add.new.deal.credit.objective.type = Ціль кредитування
+
+#Workflow -> Deals -> Add -> Step 2 (Client Info)
+label.header.add.deal.step2.client = Крок 2. Загальна інформація про Кліента
+label.add.deal.customer.last.name = Прізвище
+label.add.deal.customer.first.name = Ім`я
+label.add.deal.customer.middle.name = По-батькові
+label.add.deal.customer.gender = Стать
+label.add.deal.customer.birthdate = Дата народження
+label.add.deal.customer.birthplace = Місце народження
+label.add.deal.customer.education = Освіта
+label.add.deal.customer.speciality = Спеціальність
+label.add.deal.customer.military.service = Відношення до військової служби
+label.add.deal.customer.conviction = Кримінальна відповідальность
+label.add.deal.customer.mother.lastname = Дівоче прізвище матері
+label.add.deal.customer.was.lastname.changed = Прізвище змінювалось
+label.add.deal.customer.lastname.change.date = Дата зміни прізвища 
+label.add.deal.customer.previous.lastname = Попереднє прізвище (дівоче)
+label.add.deal.customer.number.all.children = Кількість всіх дітей
+label.add.deal.customer.number.young.children = Кількість дітей до 18 років
+
+#Workflow -> Deals -> Add -> Step 3 (Passport Data)
+label.header.add.deal.step3.passport = Крок 3. Паспортні дані та ІПН клієнта
+label.add.deal.passport.registration.date = Дата видачі паспорту
+label.add.deal.passport.serial = Серія паспорту 
+label.add.deal.passport.number = Номер паспорту
+label.add.deal.passport.who.gave.passport = Ким виданий паспорт
+label.add.deal.tax.number = ІПН
+label.add.deal.tax.number.who.gave.tax.number = Орган, що видав ІПН
+label.add.deal.tax.number.registration.date = Дата видачі ІПН
+label.add.deal.has.other.document = Наявність іншого документа
+label.add.deal.other.document.name = Назва іншого документа
+
+#Workflow -> Deals -> Add -> Step 4 (Marriage Data)
+label.header.add.deal.step4.marriage = Крок 4. Дані про сімейний стан та дружину/чоловіка
+label.add.deal.marriage.marital.status = Сімейний стан
+label.add.deal.marriage.registration.date = Дата реєстрації шлюбу
+label.add.deal.marriage.spouse.first.name = Ім`я
+label.add.deal.marriage.spouse.middle.name = По-батькові
+label.add.deal.marriage.spouse.last.name = Прізвище
+label.add.deal.marriage.spouse.id.tax.number = ІПН
+label.add.deal.marriage.spouse.birth.date = Дата народження
+label.add.deal.marriage.spouse.phone.work.home = Телефон (дом/роб)
+label.add.deal.marriage.spouse.phone.mobile = Номер моб. телефону
+label.add.deal.marriage.spouse.job.type = Тип роботи
+label.add.deal.marriage.spouse.workplace = Назва місця роботи
+label.add.deal.marriage.spouse.position = Посада
+label.add.deal.marriage.spouse.business.line.type = Сфера діяльності
+label.add.deal.marriage.spouse.organization.type = Форма власності
+
+#Workflow -> Deals -> Add -> Step 5 (Address Data)
+label.header.add.deal.step5.address = Крок 5. Адреса кліента
+label.add.deal.registration.address = Адреса реєстрації
+label.add.deal.registration.address.region = Область
+label.add.deal.registration.address.town = Населений пункт
+label.add.deal.registration.address.district = Район
+label.add.deal.registration.address.street = Вулиця
+label.add.deal.registration.address.house = Будинок
+label.add.deal.registration.address.building = Корпус
+label.add.deal.registration.address.apartment = Квартира
+label.add.deal.registration.address.postcode = Індекс
+label.add.deal.registration.address.date = Дата реєстрації
+label.add.deal.registration.address.term = Строк проживання, з якого року
+label.add.deal.actual.address = Адреса фактичного проживання
+label.add.deal.actual.address.is.the.same = Cпівпадає з адресою реєстрації?
+label.add.deal.actual.address.region = Область
+label.add.deal.actual.address.town = Населений пункт
+label.add.deal.actual.address.district = Район
+label.add.deal.actual.address.street = Вулиця
+label.add.deal.actual.address.house = Будинок
+label.add.deal.actual.address.building = Корпус
+label.add.deal.actual.address.apartment = Квартира
+label.add.deal.actual.address.postcode = Індекс
+label.add.deal.actual.address.term = Строк проживання, з якого року
+
+#Workflow -> Deals -> Add -> Step 6 (Phone Info)
+label.header.add.deal.step6.phones = Крок 6. Контактні телефони Клієнта
+label.add.deal.mobile.phone1 = Мобільний телефон 1
+label.add.deal.mobile.phone2 = Мобільний телефон 2 (якщо є)
+label.add.deal.registration.phone = Домашній телефон (за місцем реєстраціїї, якщо є)
+label.add.deal.actual.phone = Домашній телефон (за місцем фактичного проживання, якщо є)
+
+#Workflow -> Deals -> Add -> Step 7 (Contact People)
+label.header.add.deal.step7.contact.people = Крок 7. Контактні особи
+label.header.add.deal.step7.fp = Перша контактна особа
+label.header.add.deal.step7.sp = Друга контактна особа
+label.header.add.deal.step7.fp.first.name = Ім`я
+label.header.add.deal.step7.fp.middle.name = По-батькові
+label.header.add.deal.step7.fp.last.name = Прізвище
+label.header.add.deal.step7.fp.type = Відношення до Клієнта
+label.header.add.deal.step7.fp.mobile.number = Номер мобільного телефону
+label.header.add.deal.step7.fp.home.number = Номер стаціонарного телефону
+label.header.add.deal.step7.fp.birth.date = Дата народження
+label.header.add.deal.step7.fp.address = Адреса проживання
+label.header.add.deal.step7.sp.present = Є друга контактна особа
+label.header.add.deal.step7.sp.first.name = Ім`я
+label.header.add.deal.step7.sp.middle.name = По-батькові
+label.header.add.deal.step7.sp.last.name = Прізвище
+label.header.add.deal.step7.sp.type = Відношення до Клієнта
+label.header.add.deal.step7.sp.mobile.number = Номер мобільного телефону
+label.header.add.deal.step7.sp.home.number = Номер стаціонарного телефону
+label.header.add.deal.step7.sp.birth.date = Дата народження
+label.header.add.deal.step7.sp.address = Адреса проживання
+
+#Workflow -> Deals -> Add -> Step 8 (Working Place)
+label.header.add.deal.step8.working.place = Крок 8. Місце роботи
+label.header.add.deal.step8.current.working.place = Поточне місце роботи
+label.header.add.deal.step8.starting.date = Дата прийому на роботу
+label.header.add.deal.step8.organization.name = Назва організації
+label.header.add.deal.step8.job.type = Тип роботи
+label.header.add.deal.step8.edrpou.code = Код ЕДРПОУ
+label.header.add.deal.step8.business.line = Сфера діяльності
+label.header.add.deal.step8.position = Тип посади
+label.header.add.deal.step8.number.of.workers = Кількість підлеглих
+label.header.add.deal.step8.company.size = Розмір компанії
+label.header.add.deal.step8.term.of.service.last = Стаж на останньому місті, міс.
+label.header.add.deal.step8.term.of.service.total = Загальний трудовий стаж, міс.
+label.header.add.deal.step8.position.name = Назва посади
+label.header.add.deal.step8.organization.type = Форма властності
+label.header.add.deal.step8.existing.from.year = Строк існування компанії, з якого року
+label.header.add.deal.step8.current.working.place.address = Адреса роботи
+label.header.add.deal.step8.region = Область
+label.header.add.deal.step8.town = Населений пункт
+label.header.add.deal.step8.district = Район
+label.header.add.deal.step8.street = Вулиця
+label.header.add.deal.step8.house = Будинок
+label.header.add.deal.step8.building = Корпус
+label.header.add.deal.step8.office = Офіс
+label.header.add.deal.step8.postcode = Індекс
+label.header.add.deal.step8.phone = Номер робочого телефону (стац.)
+
+#Workflow -> Deals -> Add -> Step 9 (Additional Working Place)
+label.header.add.deal.step9.additional.working.place = Крок 9. Додаткове місце роботи
+label.header.add.deal.step9.does.exist = Є додаткове місце роботи?
+label.header.add.deal.step9.working.term.from = Період роботи, з якого року
+label.header.add.deal.step9.organization.name = Назва організації
+label.header.add.deal.step9.position.name = Посада
+label.header.add.deal.step9.business.line = Сфера діяльності
+label.header.add.deal.step9.organization.type = Форма власності
+label.header.add.deal.step9.company.size = Розмір компанії
+label.header.add.deal.step9.address = Адреса
+label.header.add.deal.step9.phone.number = Робочий телефон
+label.header.add.deal.step9.company.existing.term = Компанія існує, з якого року
+
+#Workflow -> Deals -> Add -> Step 10 (Additional Working Place)
+label.header.add.deal.step10.previous.working.place = Крок 10. Постійна попередня зайнітість
+label.header.add.deal.step10.does.exist = Є інформація про постійну попередню зайнятість?
+label.header.add.deal.step10.working.term.from = Період роботу, з якого року
+label.header.add.deal.step10.organization.name = Назва організації
+label.header.add.deal.step10.position.name = Посада
+label.header.add.deal.step10.business.line = Сфера діяльності
+label.header.add.deal.step10.address = Адреса (місто, вулиця, будинок, офіс)
+label.header.add.deal.step10.organization.type = Форма властності
+
+#Workflow -> Deals -> Add -> Step 11 (Income and Outcome)
+label.header.add.deal.step11.income.outcome = Крок 11. Доходи і Витрати
+label.header.add.deal.step11.income.size = Розмір чистого основного доходу на місяць, грн
+label.header.add.deal.step11.income.type = Тип основного доходу
+label.header.add.deal.step11.income.documents.present = Наявність документів про доходи
+label.header.add.deal.step11.additional.income.present = Є додатковий дохід?
+label.header.add.deal.step11.additional.income.size = Розмір додаткового доходу на місяць, грн
+label.header.add.deal.step11.additional.income.type = Тип додаткового доходу
+label.header.add.deal.step11.is.married = Ви одружені?
+label.header.add.deal.step11.spouse.income.size = Розмір доходу дружини/чоловіка на міс., грн
+label.header.add.deal.step11.spouse.income.type = Тип доходу
+label.header.add.deal.step11.family.outcome = Сукупні витрати сім'ї в місяц, грн
+label.header.add.deal.step11.family.number.people = Кількість осіб на утриманні 
+label.header.add.deal.step11.income = Доходи
+label.header.add.deal.step11.outcome = Витрати
+
+#Workflow -> Deals -> Add -> Step 12 (Property)
+label.header.add.deal.step12.property = Крок 12. Власність
+label.header.add.deal.step12.is.car.present = Авто є
+label.header.add.deal.step12.car.brand = Марка
+label.header.add.deal.step12.car.release.year = Рік випуску
+label.header.add.deal.step12.is.ep.present = Нерухомість є
+label.header.add.deal.step12.ep.address = Адреса
+label.header.add.deal.step12.ep.area = Площа, кв.м
+label.header.add.deal.step12.ep.room.number = Кількість кімнат
+label.header.add.deal.step12.ep.purchase.year = Рік купівлі
+label.header.add.deal.step12.ep.approx.price = Орієнтовна ринкова вартість, грн
+label.header.add.deal.step12.ep.property.type = Форма власності
+label.header.add.deal.step12.ep.property.history = Як стала власністю?
+label.header.add.deal.step12.is.ga.present = Земля є
+label.header.add.deal.step12.ga.address = Адреса
+label.header.add.deal.step12.ga.area = Площа, га
+label.header.add.deal.step12.ga.property.type = Форма власності
+
+#Workflow -> Deals -> Add -> Step 13 (Credit Cards)
+label.header.add.deal.step13.credit.and.credit.cards = Крок 13. Кредити та кредитні картки
+label.header.add.deal.step13.credits = Кредити
+label.header.add.deal.step13.credit.first = Перший дійсний кредит
+label.header.add.deal.step13.credit.first.exist = Так, є
+label.header.add.deal.step13.credit.first.bank.name = Назва банку
+label.header.add.deal.step13.credit.first.time.left = Платіж по кредиту, міс.
+label.header.add.deal.step13.credit.first.form = Тип кредиту
+label.header.add.deal.step13.credit.first.money.left = Залишок по кредиту
+label.header.add.deal.step13.credit.first.amount = Сума кредиту
+label.header.add.deal.step13.credit.first.start.date = Дата видачі
+label.header.add.deal.step13.credit.first.end.date = Дата закінчення
+label.header.add.deal.step13.credit.second = Другий дійсний кредит
+label.header.add.deal.step13.credit.second.exist = Так, є
+label.header.add.deal.step13.credit.second.bank.name = Назва банку
+label.header.add.deal.step13.credit.second.time.left = Платіж по кредиту, міс.
+label.header.add.deal.step13.credit.second.form = Тип кредиту
+label.header.add.deal.step13.credit.second.money.left = Залишок по кредиту
+label.header.add.deal.step13.credit.second.amount = Сума кредиту
+label.header.add.deal.step13.credit.second.start.date = Дата видачі
+label.header.add.deal.step13.credit.second.end.date = Дата закінчення
+label.header.add.deal.step13.credit.third.exist = Так, є
+label.header.add.deal.step13.credit.third = Третій дійсний кредит
+label.header.add.deal.step13.credit.third.bank.name = Назва банку
+label.header.add.deal.step13.credit.third.time.left = Платіж по кредиту, міс.
+label.header.add.deal.step13.credit.third.form = Тип кредиту
+label.header.add.deal.step13.credit.third.money.left = Залишок по кредиту
+label.header.add.deal.step13.credit.third.amount = Сума кредиту
+label.header.add.deal.step13.credit.third.start.date = Дата видачі
+label.header.add.deal.step13.credit.third.end.date = Дата закінчення
+label.header.add.deal.step13.credit.cards = Кредитні картки
+label.header.add.deal.step13.credit.card.first = Перша дійсна кредитна картка
+label.header.add.deal.step13.credit.card.first.exist = Так, є
+label.header.add.deal.step13.credit.card.first.bank.name = Назва банку
+label.header.add.deal.step13.credit.card.first.month.payment = Місячний платіж, грн
+label.header.add.deal.step13.credit.card.first.credit.limit = Кредитний ліміт, грн
+label.header.add.deal.step13.credit.card.first.money.left = Залишок, грн
+label.header.add.deal.step13.credit.card.first.start.date = Дата видачі картки
+label.header.add.deal.step13.credit.card.first.end.date = Дата закінчення картки
+label.header.add.deal.step13.credit.card.second = Друга дійсна кредитна картка
+label.header.add.deal.step13.credit.card.second.exist = Так, є
+label.header.add.deal.step13.credit.card.second.bank.name = Назва банку
+label.header.add.deal.step13.credit.card.second.month.payment = Місячний платіж, грн
+label.header.add.deal.step13.credit.card.second.credit.limit = Кредитний ліміт, грн
+label.header.add.deal.step13.credit.card.second.money.left = Залишок, грн
+label.header.add.deal.step13.credit.card.second.start.date = Дата видачі картки
+label.header.add.deal.step13.credit.card.second.end.date = Дата закінчення картки
+label.header.add.deal.step13.credit.card.third = Третя дійсна кредитна картка
+label.header.add.deal.step13.credit.card.third.exist = Так, є
+label.header.add.deal.step13.credit.card.third.bank.name = Назва банку
+label.header.add.deal.step13.credit.card.third.month.payment = Місячний платіж, грн
+label.header.add.deal.step13.credit.card.third.credit.limit = Кредитний ліміт, грн
+label.header.add.deal.step13.credit.card.third.money.left = Залишок, грн
+label.header.add.deal.step13.credit.card.third.start.date = Дата видачі картки
+label.header.add.deal.step13.credit.card.third.end.date = Дата закінчення картки
+label.header.add.deal.step13.credit.card.first.last.transaction.date = Дата останньої транзакції
+label.header.add.deal.step13.credit.card.second.last.transaction.date = Дата останньої транзакції
+label.header.add.deal.step13.credit.card.third.last.transaction.date = Дата останньої транзакції
+
+#Workflow -> Deals -> Add -> Step 14 (Upload)
+label.header.add.deal.step14.upload = Крок 14. Прикріпити файли
+label.header.add.deal.step14.upload.file = Виберіть файл:
+
+#Workflow -> Deals -> Add -> Step 15 (Finished)
+label.header.add.deal.step15.finished = Крок 15. Завантажіть ще файли або натисніть "Далее", щоб закінчити
+label.header.add.deal.step15.finished.success = Прикріплений Файл
+label.header.add.deal.step15.upload.file.link = Завантажити ще файли
+
+#Credit validation messages
+NotNull.credit.amountOfMoney = Значение не может быть пустым
+NotNull.credit.term = Значение не может быть пустым
+typeMismatch.credit.amountOfMoney = Введеное значение не является числом
+typeMismatch.credit.term = Введеное значение не является числом
+Range.credit.term = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.credit.amountOfMoney = Значение должно лежать в диапазоне от 1 до 1000000000
+
+#Customer validation messages
+NotNull.customer.numberOfAllChildren = Значение не может быть пустым
+NotNull.customer.numberOfYoungChildren = Значение не может быть пустым
+NotNull.customer.lastNameChangeDate = Значение не может быть пустым
+NotNull.customer.previousLastName = Значение не может быть пустым
+NotNull.customer.birthDate = Значение не может быть пустым
+typeMismatch.customer.numberOfAllChildren = Введеное значение не является числом
+typeMismatch.customer.numberOfYoungChildren = Введеное значение не является числом
+typeMismatch.customer.lastNameChangeDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.customer.previousLastName = typeMismatch.customer.previousLastName !!!!!
+typeMismatch.customer.birthDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.customer.lastNameChangeDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.customer.numberOfAllChildren = Введеное значение не является числом
+typeMismatch.customer.numberOfYoungChildren = Введеное значение не является числом
+Pattern.customer.motherLastName = Введены недопустимые символы
+Pattern.customer.speciality = Введены недопустимые символы
+Pattern.customer.birthPlace = Введены недопустимые символы
+Pattern.customer.previousLastName = Введены недопустимые символы
+Pattern.customer.middleName = Введены недопустимые символы
+Pattern.customer.lastName = Введены недопустимые символы
+Pattern.customer.firstName = Введены недопустимые символы
+Size.customer.birthPlace = Допустимая длина поля - от 2 до 30 символов
+Size.customer.lastName = Допустимая длина поля - от 2 до 30 символов
+Size.customer.middleName = Допустимая длина поля - от 2 до 30 символов
+Size.customer.motherLastName = Допустимая длина поля - от 2 до 30 символов
+Size.customer.speciality = Допустимая длина поля - от 2 до 30 символов
+Size.customer.firstName = Допустимая длина поля - от 2 до 30 символов
+Range.customer.numberOfAllChildren = Значение должно лежать в диапазоне от 1 до 20
+Range.customer.numberOfYoungChildren = Значение должно лежать в диапазоне от 1 до 20
+
+#Passport validation messages
+NotNull.passport.nameOfOtherDocument = Значение не может быть пустым
+NotNull.passport.idTaxRegistrationDate = Значение не может быть пустым
+NotNull.passport.passportRegistrationDate = Значение не может быть пустым
+Size.passport.whoGaveIdtax = Допустимая длина поля - от 2 до 300 символов
+Size.passport.whoGavePassport = Допустимая длина поля - от 2 до 300 символов
+Size.passport.nameOfOtherDocument = Допустимая длина поля - от 2 до 30 символов
+Pattern.passport.number = Номер паспорта должен состоять из 6 цифр
+Pattern.passport.serial = Серия паспорта должен состоять из 2 букв
+Pattern.passport.nameOfOtherDocument = Допустимая длина поля - от 2 до 30 символов
+Pattern.passport.idTaxNumber = ИНН должен состоять из 10 или 11 цифр
+Pattern.passport.whoGaveIdtax = Допустимые символы - буквы, цифры и пробел
+Pattern.passport.whoGavePassport = Допустимые символы - буквы, цифры и пробел
+typeMismatch.passport.idTaxRegistrationDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.passport.passportRegistrationDate = Допустимый формат даты - ДД.ММ.ГГГГ
+ 
+#Marriage validation messages
+NotNull.marriage.birthDate = Значение не может быть пустым
+NotNull.marriage.marriageRegistrationDate = Значение не может быть пустым
+Size.marriage.position = Допустимая длина поля - до 30 символов
+Size.marriage.firstName = Допустимая длина поля - от 2 до 30 символов
+Size.marriage.workplace = Допустимая длина поля - до 30 символов
+Size.marriage.middleName = Допустимая длина поля - от 2 до 30 символов
+Size.marriage.lastName = Допустимая длина поля - от 2 до 30 символов
+Pattern.marriage.phoneNumberHomeWork = Введеное значение не является номером телефона
+Pattern.marriage.idTaxNumber = ИНН должен состоять из 10 или 11 цифр
+Pattern.marriage.phoneNumberMobile = Введеное значение не является номером телефона
+Pattern.marriage.firstName = Введены недопустимые символы
+Pattern.marriage.lastName = Введены недопустимые символы
+Pattern.marriage.middleName = Введены недопустимые символы
+Pattern.marriage.workplace = Введены недопустимые символы
+Pattern.marriage.position = Введены недопустимые символы
+typeMismatch.marriage.birthDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.marriage.marriageRegistrationDate = Допустимый формат даты - ДД.ММ.ГГГГ
+
+#Address validation messages
+NotNull.address.rRegistrationDate = Значение не может быть пустым
+Size.address.aHouse = Допустимая длина поля - от 2 до 30 символов
+Size.address.rHouse = Допустимая длина поля - от 2 до 30 символов
+Size.address.aStreet = Допустимая длина поля - от 2 до 30 символов
+Size.address.rStreet = Допустимая длина поля - от 2 до 30 символов
+Size.address.rTown = Допустимая длина поля - от 2 до 30 символов
+Size.address.aTown = Допустимая длина поля - от 2 до 30 символов
+Size.address.aDistrict = Допустимая длина поля - до 30 символов
+Size.address.aApartment = Допустимая длина поля - до 30 символов
+Size.address.aBuilding = Допустимая длина поля - до 30 символов
+Size.address.rDistrict = Допустимая длина поля - до 30 символов
+Size.address.rApartment = Допустимая длина поля - до 30 символов
+Size.address.rBuilding = Допустимая длина поля - до 30 символов
+typeMismatch.address.rRegistrationDate = Допустимый формат даты - ДД.ММ.ГГГГ
+Pattern.address.rDistrict = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.address.aDistrict = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.address.aHouse = Допустимые символы - буквы, цифры, пробел, тире, дробь
+Pattern.address.rHouse = Допустимые символы - буквы, цифры, пробел, тире, дробь
+Pattern.address.rApartment = Допустимые символы - буквы, цифры, пробел, тире, дробь
+Pattern.address.aApartment = Допустимые символы - буквы, цифры, пробел, тире, дробь
+Pattern.address.rTown = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.address.aTown = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.address.aBuilding = Допустимые символы - буквы, цифры, пробел, тире, дробь
+Pattern.address.rBuilding = Допустимые символы - буквы, цифры, пробел, тире, дробь
+Pattern.address.aPostcode = Введеное значение не является номером индексом
+Pattern.address.rPostcode = Введеное значение не является номером индексом
+Pattern.address.aStreet = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.address.rStreet = Допустимые символы - буквы, цифры, пробел, тире
+
+#Phone validation messages
+NotEmpty.customerPhoneSet.phoneNumberMobile1 = Значение не может быть пустым
+Pattern.customerPhoneSet.phoneNumberRegistration = Введеное значение не является номером телефона
+Pattern.customerPhoneSet.phoneNumberActual = Введеное значение не является номером телефона
+Pattern.customerPhoneSet.phoneNumberMobile1 = Введеное значение не является номером телефона
+Pattern.customerPhoneSet.phoneNumberMobile2 = Введеное значение не является номером телефона
+
+#Contact persons validation messages
+NotNull.contactPersons.spBirthDate = Значение не может быть пустым
+NotNull.contactPersons.fpBirthDate = Значение не может быть пустым
+Size.contactPersons.fpLastName = Допустимая длина поля - от 2 до 30 символов
+Size.contactPersons.spMobileNumber = Допустимая длина поля - от 2 до 30 символов 
+Size.contactPersons.spMiddleName = Допустимая длина поля - от 2 до 30 символов
+Size.contactPersons.spLastName = Допустимая длина поля - от 2 до 30 символов
+Size.contactPersons.spFirstName = Допустимая длина поля - от 2 до 30 символов
+Size.contactPersons.fpMiddleName = Допустимая длина поля - от 2 до 30 символов
+Size.contactPersons.fpAddress = Допустимая длина поля - до 300 символов
+Size.contactPersons.fpFirstName = Допустимая длина поля - от 2 до 30 символов
+Size.contactPersons.fpMobileNumber = Допустимая длина поля - от 2 до 30 символов
+Size.contactPersons.spHomeWorkNumber = Допустимая длина поля - от 2 до 30 символов
+Size.contactPersons.spAddress = Допустимая длина поля - до 300 символов
+Size.contactPersons.fpHomeWorkNumber = Допустимая длина поля - от 2 до 30 символов
+typeMismatch.contactPersons.fpBirthDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.contactPersons.spBirthDate = Допустимый формат даты - ДД.ММ.ГГГГ
+Pattern.contactPersons.spHomeWorkNumber = Введеное значение не является номером телефона
+Pattern.contactPersons.fpMobileNumber = Введеное значение не является номером телефона
+Pattern.contactPersons.spMiddleName = Допустимые символы - буквы
+Pattern.contactPersons.fpFirstName = Допустимые символы - буквы
+Pattern.contactPersons.spLastName = Допустимые символы - буквы
+Pattern.contactPersons.fpAddress = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.contactPersons.spFirstName = Допустимые символы - буквы
+Pattern.contactPersons.spMobileNumber = Введеное значение не является номером телефона
+Pattern.contactPersons.fpMiddleName = Допустимые символы - буквы
+Pattern.contactPersons.fpHomeWorkNumber = Введеное значение не является номером телефона
+Pattern.contactPersons.fpLastName = Допустимые символы - буквы
+Pattern.contactPersons.spAddress = Допустимые символы - буквы, цифры, пробел, тире
+
+#Working place validation messages
+NotNull.workingPlace.lengthOfServiceLastPlace = Значение не может быть пустым
+NotNull.workingPlace.lengthOfServiceTotal = Значение не может быть пустым
+NotNull.workingPlace.numberOfWorkers = Значение не может быть пустым
+NotNull.workingPlace.startingDate = Значение не может быть пустым
+Size.workingPlace.phoneNumber = Допустимая длина поля - от 2 до 30 символов
+Size.workingPlace.street = Допустимая длина поля - от 2 до 30 символов
+Size.workingPlace.EDRPOUcode = Допустимая длина поля - от 2 до 30 символов
+Size.workingPlace.organizationName = Допустимая длина поля - от 2 до 30 символов
+Size.workingPlace.town = Допустимая длина поля - от 2 до 30 символов
+Size.workingPlace.positionName = Допустимая длина поля - от 2 до 30 символов
+Size.workingPlace.house = Допустимая длина поля - от 1 до 30 символов
+typeMismatch.workingPlace.lengthOfServiceLastPlace = Введеное значение не является числом
+typeMismatch.workingPlace.lengthOfServiceTotal = Введеное значение не является числом
+typeMismatch.workingPlace.numberOfWorkers = Введеное значение не является числом
+typeMismatch.workingPlace.startingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+Pattern.workingPlace.postcode = Введеное значение не является номером индексом
+Pattern.workingPlace.phoneNumber = Введеное значение не является номером телефона
+Pattern.workingPlace.street = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.workingPlace.building = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.workingPlace.house = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.workingPlace.town = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.workingPlace.office = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.workingPlace.postcode = Введеное значение не является номером индексом
+Pattern.workingPlace.EDRPOUcode = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.workingPlace.district = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.workingPlace.organizationName = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.workingPlace.positionName = Допустимые символы - буквы, цифры, пробел, тире
+Range.workingPlace.numberOfWorkers = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.workingPlace.lengthOfServiceLastPlace = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.workingPlace.lengthOfServiceTotal = Значение должно лежать в диапазоне от 1 до 1000000000
+
+#Additional working place validation messages
+Size.additionalWorkingPlace.organizationName = Допустимая длина поля - от 2 до 30 символов
+Size.additionalWorkingPlace.address = Допустимая длина поля - от 2 до 300 символов
+Size.additionalWorkingPlace.positionName = Допустимая длина поля - от 2 до 30 символов
+Size.additionalWorkingPlace.phoneNumber = Введеное значение не является номером телефона
+Pattern.additionalWorkingPlace.phoneNumber = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.additionalWorkingPlace.address = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.additionalWorkingPlace.organizationName = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.additionalWorkingPlace.positionName = Допустимые символы - буквы, цифры, пробел, тире
+
+#Previous working place validation messages
+Size.previousWorkingPlace.positionName = Допустимая длина поля - от 2 до 30 символов
+Size.previousWorkingPlace.address = Допустимая длина поля - от 2 до 30 символов
+Size.previousWorkingPlace.organizationName = Допустимая длина поля - от 2 до 30 символов
+Pattern.previousWorkingPlace.address = Допустимая длина поля - от 2 до 300 символов
+Pattern.previousWorkingPlace.positionName = Допустимая длина поля - от 2 до 30 символов
+Pattern.previousWorkingPlace.organizationName = Допустимая длина поля - от 2 до 30 символов
+
+#Income Outcome validation messages
+NotNull.incomeOutcome.familyPeopleNumber = Значение не может быть пустым
+NotNull.incomeOutcome.totalOutcome = Значение не может быть пустым
+NotNull.incomeOutcome.mainIncomeSize = Значение не может быть пустым
+NotNull.incomeOutcome.additionalIncomeSize = Значение не может быть пустым
+NotNull.incomeOutcome.spouseIncomeSize = Значение не может быть пустым
+typeMismatch.incomeOutcome.additionalIncomeSize = Введеное значение не является числом
+typeMismatch.incomeOutcome.familyPeopleNumber = Введеное значение не является числом
+typeMismatch.incomeOutcome.mainIncomeSize = Введеное значение не является числом
+typeMismatch.incomeOutcome.spouseIncomeSize = Введеное значение не является числом
+typeMismatch.incomeOutcome.totalOutcome = Введеное значение не является числом
+Range.incomeOutcome.mainIncomeSize = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.incomeOutcome.additionalIncomeSize = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.incomeOutcome.spouseIncomeSize = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.incomeOutcome.totalOutcome = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.incomeOutcome.familyPeopleNumber = Значение должно лежать в диапазоне от 1 до 20
+
+#Property validation messages
+NotNull.property.epArea = Значение не может быть пустым
+NotNull.property.epPrice = Значение не может быть пустым
+NotNull.property.epRoomNumber = Значение не может быть пустым
+NotNull.property.gaArea = Значение не может быть пустым
+Size.property.gaAddress = Допустимая длина поля - от 2 до 30 символов
+Size.property.carBrand = Допустимая длина поля - от 2 до 30 символов
+Size.property.epAddress = Допустимая длина поля - от 2 до 300 символов
+typeMismatch.property.epArea = Введеное значение не является числом
+typeMismatch.property.epPrice = Введеное значение не является числом
+typeMismatch.property.epRoomNumber = Введеное значение не является числом
+typeMismatch.property.gaArea = Введеное значение не является числом
+Pattern.property.epAddress = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.property.gaAddress = Допустимые символы - буквы, цифры, пробел, тире
+Pattern.property.carBrand = Допустимые символы - буквы, цифры, пробел, тире
+Range.property.epArea = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.property.epRoomNumber = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.property.epPrice = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.property.gaArea = Значение должно лежать в диапазоне от 1 до 1000000000
+
+#Credit Cards validation messages
+NotNull.creditCard.fcAmount = Значение не может быть пустым
+NotNull.creditCard.fcMoneyLeft = Значение не может быть пустым
+NotNull.creditCard.fcTimeLeft = Значение не может быть пустым
+NotNull.creditCard.fcStartingDate = Значение не может быть пустым
+NotNull.creditCard.fcEndingDate = Значение не может быть пустым
+NotNull.creditCard.scAmount = Значение не может быть пустым
+NotNull.creditCard.scMoneyLeft = Значение не может быть пустым
+NotNull.creditCard.scTimeLeft = Значение не может быть пустым
+NotNull.creditCard.scStartingDate = Значение не может быть пустым
+NotNull.creditCard.scEndingDate = Значение не может быть пустым
+NotNull.creditCard.tcAmount = Значение не может быть пустым
+NotNull.creditCard.tcMoneyLeft = Значение не может быть пустым
+NotNull.creditCard.tcTimeLeft = Значение не может быть пустым
+NotNull.creditCard.tcStartingDate = Значение не может быть пустым
+NotNull.creditCard.tcEndingDate = Значение не может быть пустым
+NotNull.creditCard.fccMonthPayment = Значение не может быть пустым
+NotNull.creditCard.fccCreditLimit = Значение не может быть пустым
+NotNull.creditCard.fccMoneyLeft = Значение не может быть пустым
+NotNull.creditCard.fccStartingDate = Значение не может быть пустым
+NotNull.creditCard.fccEndingDate = Значение не может быть пустым
+NotNull.creditCard.fccLastTransactionDate = Значение не может быть пустым
+NotNull.creditCard.sccMonthPayment = Значение не может быть пустым
+NotNull.creditCard.sccCreditLimit = Значение не может быть пустым
+NotNull.creditCard.sccMoneyLeft = Значение не может быть пустым
+NotNull.creditCard.sccStartingDate = Значение не может быть пустым
+NotNull.creditCard.sccEndingDate = Значение не может быть пустым
+NotNull.creditCard.sccLastTransactionDate = Значение не может быть пустым
+NotNull.creditCard.tccMonthPayment = Значение не может быть пустым
+NotNull.creditCard.tccCreditLimit = Значение не может быть пустым
+NotNull.creditCard.tccMoneyLeft = Значение не может быть пустым
+NotNull.creditCard.tccStartingDate = Значение не может быть пустым
+NotNull.creditCard.tccEndingDate = Значение не может быть пустым
+NotNull.creditCard.tccLastTransactionDate = Значение не может быть пустым
+
+Size.creditCard.fcBankName = Допустимая длина поля - от 2 до 30 символов
+Size.creditCard.scBankName = Допустимая длина поля - от 2 до 30 символов
+Size.creditCard.tcBankName = Допустимая длина поля - от 2 до 30 символов
+Size.creditCard.fccBankName = Допустимая длина поля - от 2 до 30 символов
+Size.creditCard.sccBankName = Допустимая длина поля - от 2 до 30 символов
+Size.creditCard.tccBankName = Допустимая длина поля - от 2 до 30 символов
+typeMismatch.creditCard.fcAmount = Введеное значение не является числом
+typeMismatch.creditCard.fcEndingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.creditCard.fcMoneyLeft = Введеное значение не является числом
+typeMismatch.creditCard.fcStartingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.creditCard.fcTimeLeft = Введеное значение не является числом
+Pattern.creditCard.fcBankName = Допустимые символы - буквы, цифры, пробел, тире
+typeMismatch.creditCard.fccCreditLimit = Введеное значение не является числом
+typeMismatch.creditCard.fccEndingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.creditCard.fccMoneyLeft = Введеное значение не является числом
+typeMismatch.creditCard.fccMonthPayment = Введеное значение не является числом
+typeMismatch.creditCard.fccStartingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.creditCard.fccLastTransactionDate = Допустимый формат даты - ДД.ММ.ГГГГ
+
+Pattern.creditCard.fccBankName = Допустимые символы - буквы, цифры, пробел, тире
+typeMismatch.creditCard.scAmount = Введеное значение не является числом
+typeMismatch.creditCard.scEndingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.creditCard.scMoneyLeft = Введеное значение не является числом
+typeMismatch.creditCard.scStartingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.creditCard.scTimeLeft = Введеное значение не является числом
+Pattern.creditCard.scBankName = Допустимые символы - буквы, цифры, пробел, тире
+typeMismatch.creditCard.sccCreditLimit = Введеное значение не является числом
+typeMismatch.creditCard.sccEndingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.creditCard.sccMoneyLeft = Введеное значение не является числом
+typeMismatch.creditCard.sccMonthPayment = Введеное значение не является числом
+typeMismatch.creditCard.sccStartingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.creditCard.sccLastTransactionDate = Допустимый формат даты - ДД.ММ.ГГГГ
+Pattern.creditCard.sccBankName = Допустимые символы - буквы, цифры, пробел, тире
+typeMismatch.creditCard.tcAmount = Введеное значение не является числом
+typeMismatch.creditCard.tcEndingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.creditCard.tcMoneyLeft = Введеное значение не является числом
+typeMismatch.creditCard.tcStartingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.creditCard.tcTimeLeft = Введеное значение не является числом
+Pattern.creditCard.tcBankName = Допустимые символы - буквы, цифры, пробел, тире
+typeMismatch.creditCard.tccCreditLimit = Введеное значение не является числом
+typeMismatch.creditCard.tccEndingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.creditCard.tccMoneyLeft = Введеное значение не является числом
+typeMismatch.creditCard.tccMonthPayment = Введеное значение не является числом
+typeMismatch.creditCard.tccStartingDate = Допустимый формат даты - ДД.ММ.ГГГГ
+typeMismatch.creditCard.tccLastTransactionDate = Допустимый формат даты - ДД.ММ.ГГГГ
+Pattern.creditCard.tccBankName = Допустимые символы - буквы, цифры, пробел, тире
+Range.creditCard.fcTimeLeft = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.fcMoneyLeft = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.fcAmount = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.scTimeLeft = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.scMoneyLeft = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.scAmount = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.tcTimeLeft = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.tcMoneyLeft = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.tcAmount = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.fccMonthPayment = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.fccMoneyLeft = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.fccCreditLimit = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.sccMonthPayment = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.sccMoneyLeft = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.sccCreditLimit = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.tccMonthPayment = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.tccMoneyLeft = Значение должно лежать в диапазоне от 1 до 1000000000
+Range.creditCard.tccCreditLimit = Значение должно лежать в диапазоне от 1 до 1000000000
+
+#Upload validation messages
+deal.upload.size.too.big.failure.message = Размер файла превышает 5 МБайт
+deal.upload.already.exists.failure.message = Такой файл уже существует
+
+#General Labels
+label.general.value.not.set = ---
+label.header.page.not.found = Страница не найдена
+feature.not.implemented.yet = Это еще не реализовано
+label.yes = Так
+label.no = Ні
+label.version = Version 0.9 Build 180813
+label.header.general.failure = Ошибка
+general.failure.message = Неизвестная ошибка
+
+#View Deal
+label.header.view.deal = Просмотр Заявки
+label.header.view.deal.h2.deal = Загальна інформація
+label.header.view.deal.h2.credit = Інформація по кредиту
+label.header.view.deal.h2.personal.data = Персональні дані
+label.header.view.deal.h3.client = Загальна інформація 
+label.header.view.deal.h3.passport = Паспортні дані та ІПН клієнта
+label.header.view.deal.h3.marriage = Дані про сімейний стан та дружину/чоловіка
+label.header.view.deal.h2.contact.points = Контакти Клієнта
+label.header.view.deal.h3.address = Адреси
+label.header.view.deal.h3.phones = Контактні телефони клієнта
+label.header.view.deal.h3.contact.people = Контактні особи
+label.header.view.deal.h2.job = Робота
+label.header.view.deal.h3.working.place = Поточне місце роботи
+label.header.view.deal.h3.additional.working.place = Додаткове місце роботи
+label.header.view.deal.h3.previous.working.place = Постійна попередня зайнятість
+label.header.view.deal.h2.finances.credits = Фінанси, активи, кредити
+label.header.view.deal.h3.income.outcome = Доходи та розходи
+label.header.view.deal.h3.property = Власність
+label.header.view.deal.h3.credit.cards = Кредити та картки
+label.header.view.deal.h2.files = Прикріплені файли
+
+label.view.deal.id = ID
+label.view.deal.creation.date = Дата створення
+label.view.deal.modification.date = Дата модифікації
+label.view.deal.credit.amount.money = Сума кредита, грн.
+label.view.deal.credit.term = Строк, місяців
+label.view.deal.credit.objective.type = Ціль кредитування
+
+label.view.deal.edit.link = Редактировать
+
+label.view.customer.name = Ім'я
+label.view.customer.gender = Стать
+label.view.customer.birth.date = Дата народження
+label.view.customer.birth.place = Місце народження
+label.view.customer.education = Освіта
+label.view.customer.speciality = Спеціальність
+label.view.customer.military.service = Відношення до військової служби
+label.view.customer.conviction = Кримінальної відповідальность
+label.view.customer.mother.lastname = Дівоча фамілія матері
+label.view.customer.was.lastname.changed = Чи змінювалось прізвище?
+label.view.customer.lastname.change.date = Дата зміни прізвища
+label.view.customer.previous.lastname = Попереднє (дівоче) прізвище
+label.view.customer.all.children = Діти усі
+label.view.customer.young.children = Кількість дітей до 18 років
+label.view.customer.passport.serial.number = Серія та номер паспорта
+label.view.customer.passport.who.gave.passport = Ким виданий паспорт
+label.view.customer.passport.registration.date = Дата видачі паспорту
+label.view.customer.passport.has.other.document = Наявність іншого документа
+label.view.customer.passport.name.other.document = Назва іншого документа
+label.view.customer.id.tax.number = ІПН
+label.view.customer.id.tax.registration.date = Дата видачі ІПН
+label.view.customer.id.tax.who.gave = Орган, що видав ІПН
+label.view.customer.marriage.status = Сімейний стан
+label.view.customer.marriage.registration.date = Дата реєстрації шлюбу
+label.view.customer.marriage.name = Ім'я
+label.view.customer.marriage.birth.date = Дата народження
+label.view.customer.marriage.phone.number.mobile = Номер моб. телефону
+label.view.customer.marriage.phone.number.home.work = Телефон (дом/робочий)
+label.view.customer.marriage.workplace = Назва місця роботи
+label.view.customer.marriage.business.line = Сфера діяльності
+label.view.customer.marriage.position = Посада
+label.view.customer.marriage.job = Назва місця роботи
+label.view.customer.marriage.organization.type = Форма властності
+label.view.customer.marriage.id.tax.number = ІПН
+label.view.customer.registration.address = Адреса реєстрації
+label.view.customer.registration.address.district = Район
+label.view.customer.registration.address.street = Вулиця
+label.view.customer.registration.address.house = Будинок
+label.view.customer.registration.address.building =  Корпус
+label.view.customer.registration.address.apartment = Квартира
+label.view.customer.registration.address.postcode = Індекс
+label.view.customer.registration.address.registration.date = Дата реєстрації
+label.view.customer.registration.address.term.of.living = Строк проживання, з якого року
+label.view.customer.registration.actual.the.same = Cпівпадає з адресою реєстрації?
+label.view.customer.actual.address = Адреса фактичного проживання
+label.view.customer.actual.address.district = Район
+label.view.customer.actual.address.street = Вулиця
+label.view.customer.actual.address.house = Будинок
+label.view.customer.actual.address.building = Корпус
+label.view.customer.actual.address.apartment = Квартира
+label.view.customer.actual.address.postcode = Індекс
+label.view.customer.actual.address.term.of.living = Строк проживання, з якого року
+label.view.customer.phones.mobile1 = Мобільний телефон 1
+label.view.customer.phones.mobile2 = Мобільний телефон 2 (якщо є)
+label.view.customer.phones.registration = Домашній телефон (за місцем реєстраціїї, якщо є)
+label.view.customer.phones.actual = Домашній телефон (за місцем фактичного проживання, якщо є)
+label.header.view.deal.h4.first.contact.person = Перша контактна особа
+label.header.view.deal.h4.second.contact.person = Друга контактна особа
+label.view.customer.first.contact.person.name = Ім'я
+label.view.customer.first.contact.person.type = Відношення до Клієнта
+label.view.customer.first.contact.person.mobile.number = Номер мобільного телефону
+label.view.customer.first.contact.person.home.or.work.number = Номер стаціонарного телефону (домашній, робочий)
+label.view.customer.first.contact.person.birth.date = Дата народження
+label.view.customer.first.contact.person.address = Адреса проживання
+label.view.customer.second.contact.person.name = Ім'я
+label.view.customer.second.contact.person.type = Відношення до Клієнта
+label.view.customer.second.contact.person.mobile.number = Номер мобільного телефону
+label.view.customer.second.contact.person.home.or.work.number = Номер стаціонарного телефону (домашній, робочий)
+label.view.customer.second.contact.person.birth.date = Дата народження
+label.view.customer.second.contact.person.address = Адреса проживання
+label.view.customer.working.place.organization.name = Назва організації
+label.view.customer.working.place.starting.date = Дата прийому на роботу
+label.view.customer.working.place.business.line = Сфера діяльності
+label.view.customer.working.place.job.type = Тип роботи
+label.view.customer.working.place.EDRPOU.code = Код ЕДРПОУ
+label.view.customer.working.place.position = Назва посади
+label.view.customer.working.place.position.type = Тип посади
+label.view.customer.working.place.number.of.workers = Кількість підлеглих
+label.view.customer.working.place.company.size = Розмір компанії
+label.view.customer.working.place.organization = Форма властності
+label.view.customer.working.place.company.existing.term = Строк існування компанії, з якого року
+label.view.customer.working.place.length.of.service.total = Загальний трудовий стаж, міс.
+label.view.customer.working.place.length.of.service.last = Стаж на останньому місті, міс.
+label.view.customer.working.place.address = Адреса роботи
+label.view.customer.working.place.address.district = Район
+label.view.customer.working.place.address.street = Вулиця
+label.view.customer.working.place.address.house = Будинок
+label.view.customer.working.place.address.building = Корпус
+label.view.customer.working.place.address.office = Офіс
+label.view.customer.working.place.postcode = Індекс
+label.view.customer.working.place.phone.number = Номер робочого телефону (стаціонарний)
+label.view.customer.additional.working.place.working.term.from = Період роботи, з якого року
+label.view.customer.additional.working.place.organization = Назва організації
+label.view.customer.additional.working.place.position = Посада
+label.view.customer.additional.working.place.business.line = Сфера діяльності
+label.view.customer.additional.working.place.organization.type = Форма власності
+label.view.customer.additional.working.place.company.size = Розмір компанії
+label.view.customer.additional.working.place.address = Адреса
+label.view.customer.additional.working.place.phone.number = Робочий телефон
+label.view.customer.additional.working.place.company.existing.term = Компанія існує, з якого року
+label.view.customer.additional.working.place.existed = Є додаткове місце роботи?
+label.view.customer.previous.working.place.working.term.from = Період роботу, з якого року
+label.view.customer.previous.working.place.organization.name = Назва організації
+label.view.customer.previous.working.place.position = Посада
+label.view.customer.previous.working.place.business.line = Сфера діяльності
+label.view.customer.previous.working.place.organization = Форма властності
+label.view.customer.previous.working.place.address = Адреса (місто, вулиця, будинок, офіс)
+label.view.customer.previous.working.place.existed = Є інформація про постійну попередню зайнітість?
+label.view.customer.income.outcome.main.income.size = Розмір чистого основного доходу на місяць, грн
+label.view.customer.income.outcome.main.income.type = Тип основного доходу
+label.view.customer.income.outcome.documents.present = Наявність документів про доходи
+label.view.customer.income.outcome.additional.income.size = Розмір додаткового доходу на місяць, грн
+label.view.customer.income.outcome.addition.income.type = Тип додаткового доходу
+label.view.customer.income.outcome.spouse.income.size = Розмір доходу дружини/чоловіка на міс., грн
+label.view.customer.income.outcome.spouse.income.type = Тип доходу
+label.view.customer.income.outcome.total.outcome = Сукупні витрати сім'ї в місяц, грн
+label.view.customer.income.outcome.family.people.number = Кількість осіб на утриманні (діти до 18 років; непраціючі члени сім'ї, з якими Кліент мешкає разом)
+label.view.customer.property.car = Авто
+label.view.customer.property.ep.address = Адреса
+label.view.customer.property.ep.area = Площа, кв.м
+label.view.customer.property.ep.room.number = Кількість кімнат
+label.view.customer.property.ep.price = Орієнтовна ринкова вартість, грн
+label.view.customer.property.ep.property.type = Форма власності
+label.view.customer.property.ep.property.history.type = Як стала власністю?
+label.view.customer.property.ga.address = Адреса
+label.view.customer.property.ga.area = Площа, га
+label.view.customer.property.ga.property.type = Форма власності
+label.release.year = року випуску
+label.header.view.deal.h4.property.car = Авто
+label.header.view.deal.h4.property.ep = Нерухомість
+label.header.view.deal.h4.property.ga = Земля
+label.header.view.deal.h4.credit.cards.fc = Перший кредит
+label.header.view.deal.h4.credit.cards.sc = Другий кредит
+label.header.view.deal.h4.credit.cards.tc = Третій кредит
+label.header.view.deal.h4.credit.cards.fcc = Перша кредитна картка
+label.header.view.deal.h4.credit.cards.scc = Друга кредитна картка
+label.header.view.deal.h4.credit.cards.tcc = Третя кредитна картка
+												
+label.view.customer.credit.cards.fc.bank.name = Назва банку
+label.view.customer.credit.cards.fc.time.left = Платіж по кредиту, міс.
+label.view.customer.credit.cards.fc.money.left = Залишок по кредиту
+label.view.customer.credit.cards.fc.credit.type = Тип кредиту
+label.view.customer.credit.cards.fc.amount = Сума кредиту
+label.view.customer.credit.cards.fc.starting.date = Дата видачі
+label.view.customer.credit.cards.fc.ending.date = Дата закінчення
+label.view.customer.credit.cards.sc.bank.name = Назва банку
+label.view.customer.credit.cards.sc.time.left = Платіж по кредиту, міс.
+label.view.customer.credit.cards.sc.money.left =  Залишок по кредиту
+label.view.customer.credit.cards.sc.credit.type = Тип кредиту
+label.view.customer.credit.cards.sc.amount = Сума кредиту
+label.view.customer.credit.cards.sc.starting.date = Дата видачі
+label.view.customer.credit.cards.sc.ending.date = Дата закінчення
+label.view.customer.credit.cards.tc.bank.name = Назва банку
+label.view.customer.credit.cards.tc.time.left = Платіж по кредиту, міс.
+label.view.customer.credit.cards.tc.money.left =  Залишок по кредиту
+label.view.customer.credit.cards.tc.credit.type = Тип кредиту
+label.view.customer.credit.cards.tc.amount = Сума кредиту
+label.view.customer.credit.cards.tc.starting.date = Дата видачі
+label.view.customer.credit.cards.tc.ending.date = Дата закінчення
+label.view.customer.credit.cards.fcc.bank.name = Назва банку
+label.view.customer.credit.cards.fcc.month.payment = Місячний платіж
+label.view.customer.credit.cards.fcc.credit.limit = Кредитний ліміт, грн
+label.view.customer.credit.cards.fcc.money.left = Залишок, грн
+label.view.customer.credit.cards.fcc.starting.date = Дата видачі картки
+label.view.customer.credit.cards.fcc.ending.date = Дата закінчення картки
+label.view.customer.credit.cards.fcc.last.transaction.date = Дата останньої транзакції
+
+label.view.customer.credit.cards.scc.bank.name = Назва банку
+label.view.customer.credit.cards.scc.month.payment = Місячний платіж
+label.view.customer.credit.cards.scc.credit.limit = Кредитний ліміт, грн
+label.view.customer.credit.cards.scc.money.left = Залишок, грн
+label.view.customer.credit.cards.scc.starting.date = Дата видачі картки
+label.view.customer.credit.cards.scc.ending.date = Дата закінчення картки
+label.view.customer.credit.cards.scc.last.transaction.date = Дата останньої транзакції
+label.view.customer.credit.cards.tcc.bank.name = Назва банку
+label.view.customer.credit.cards.tcc.month.payment = Місячний платіж
+label.view.customer.credit.cards.tcc.credit.limit = Кредитний ліміт, грн
+label.view.customer.credit.cards.tcc.money.left = Залишок, грн
+label.view.customer.credit.cards.tcc.starting.date = Дата видачі картки
+label.view.customer.credit.cards.tcc.ending.date = Дата закінчення картки
+label.view.customer.credit.cards.tcc.last.transaction.date = Дата останньої транзакції
+
+deal.is.not.finished = Заявка не заполнена до конца.
+label.view.deal.continue.link = Продолжить заполнение
+label.view.deal.attach.files = Прикрепить файлы
+
+label.header.delete.deal = Удалить заявку
+label.delete.deal.id = ID
+label.delete.deal.customer.name = Имя
+label.delete.deal.customer.credit.amount = Сумма Кредита
+label.delete.deal.customer.term = Срок Кредита
+
+label.header.edit.deal = Редактировать Заявку
+label.header.edit.deal.step1.credit = Загальна інформація про кредит
+label.header.edit.deal.step2.client = Загальна інформація про Кліента
+label.header.edit.deal.step3.passport = Паспортні дані та ІПН клієнта
+label.header.edit.deal.step4.marriage = Дані про сімейний стан та дружину/чоловіка
+label.header.edit.deal.step5.address = Адреса кліента
+label.header.edit.deal.step6.phones = Контактні телефони Клієнта
+label.header.edit.deal.step7.contact.people = Контактні особи
+label.header.edit.deal.step8.working.place = Місце роботи
+label.header.edit.deal.step9.additional.working.place = Додаткове місце роботи
+label.header.edit.deal.step10.previous.working.place = Постійна попередня зайнітість
+label.header.edit.deal.step11.income.outcome = Доходи і Витрати
+label.header.edit.deal.step12.property = Власність
+label.header.edit.deal.step13.credit.cards = Кредити та кредитні картки
+
+label.header.view.call.h2.general.call.info = Общая информация
+label.header.view.call.client.info = Информация о клиенте
+label.header.view.call.office.phone.number = Офис 
+label.header.view.call.credit.details = Информация о кредите
+label.header.view.call.info.source = Источник информации
+label.header.view.call.additional.information = Дополнительная информация
+label.header.view.call.client.phone.number = Контакты Клиента
+
+#View Call
+label.view.call.id = ID
+label.view.call.worker.name = Имя Оператора
+label.view.call.date = Дата звонка
+label.view.call.client.name = Имя клиента
+label.view.call.client.age = Возраст
+label.view.call.client.employment.type = Тип трудоустройства
+label.view.call.office.phone.number = Номер телефона, на который дозвонился клиент
+label.view.call.credit.amount = Сумма кредита
+label.view.call.credit.type = Тип кредита
+label.view.call.credit.currency = Валюта
+label.view.call.info.source = Откуда клиент узнал о нас?
+label.view.call.additional.info.interests = Заинтересованность клиента 
+label.view.call.additional.info.were.credits.earlier = Имел ли клиент кредиты ранее?
+label.view.call.additional.info.banks = Банки, в которые уже обращался клиент
+label.view.call.additional.info.description = Коментарии
+label.view.call.client.phone.number = Номер телефона клиента
+label.view.call.client.phone.number.hidden = Скрытый номер
+label.view.call.client.phone.number.has.client.come = Клиент пришел в офис
+
+label.view.call.edit.link = Редактировать
+
+label.yes.ru = Да
+label.no.ru = Нет
+
+label.header.edit.call = Редактировать данные звонка
+label.header.edit.call.step1.client = Данные о клиенте
+label.header.edit.call.step2.office.phone = На какой номер дозвонился клиент? 
+label.header.edit.call.step3.credit = Данные о кредите 
+label.header.edit.call.step4.info.source = Откуда клиент узнал о нас?
+label.header.edit.call.step5.additional.info = Дополнительная информация
+label.header.edit.call.step6.client.phone.number = Номер телефона клиента
+
+label.manage.user.calls = Звонки, принятые оператором 
+label.manage.user.deals = Звонки, оформленные оператором 
+
+popup.users.table.options.enable.deals = Заявки
+
+operator.create.deal.workflow.state.type = Создано
+coordinator.review.deal.workflow.state.type = Рассмотрение
+coordinator.rejected.deal.workflow.state.type = Не согласовано
+coordinator.approved.deal.workflow.state.type = Согласовано
+operator.documents.signed.deal.workflow.state.type = Документы подписаны
+operator.documents.unsigned.deal.workflow.state.type = Документы не подписаны
+coordinator.rework.deal.workflow.state.type = На доработку
+
+new.deal.state.type = Новая заявка
+closed.deal.state.type = Закрытая заявка
+in.progress.deal.state.type = В процессе
+
+operator.workflow.side.type = Оператор
+coordinator.workflow.side.type = Координатор
+
+label.view.deal.add.comment = Добавить комментарий 
+label.header.view.deal.h2.comments = Комментарии
+label.add.new.comment.text = Текст комментария
+label.header.add.comment = Добавить комментарий
+
+label.view.deal.state = Состояние заявки
+label.view.deal.workflow.side = Ждет действия от
+label.view.deal.workflow.type = Текущее действие
+
+label.header.view.deal.h2.actions = Действия
+
+action.coordinator.review.deal.workflow.state.type = Отправить на рассмотрение
+action.coordinator.rejected.deal.workflow.state.type = Отказать
+action.coordinator.approved.deal.workflow.state.type = Одобрить
+action.operator.documents.signed.deal.workflow.state.type = Документы подписаны
+action.operator.documents.unsigned.deal.workflow.state.type = Документы не подписаны
+action.coordinator.rework.deal.workflow.state.type = Отправить на доработку
+action.operator.close.deal.workflow.state.type = Закрыть заявку
+
+
+label.view.deal.available.actions = Доступные действия
+label.header.view.deal.h2.documents = Документы
+
+label.view.deal.attach.documents = Добавить документы
+
+label.view.deal.available.documents = Доступные документы
+
+label.header.h3.deal.review = Заявка будет отправленя Координатору на рассмотрение
+label.header.h3.deal.reject = В заявке будет отказано
+label.header.h3.deal.close = Заявка будет закрыта
+label.header.h3.deal.approve = Заявка будет одобрена и отослана Оператору. Вам нужно прикрепить документы
+label.header.h3.deal.sign = Документы подписаны. Вы можете закрыть эту заявку
+label.header.h3.deal.unsign = Документы не подписаны. Вы можете закрыть эту заявку
+label.header.h3.deal.rework = Заявка будет отправлена координатору на доработку
+
+label.header.review.deal = Отправить на рассмотрение
+label.header.reject.deal = Отказать
+label.header.close.deal = Закрыть заявку
+label.header.approve.deal = Одобрить
+label.header.sign.deal = Документы подписаны
+label.header.unsign.deal = Документы не подписаны
+label.header.rework.deal = Отправить на доработку
+
+label.navigation.dashboard.my.page = Моя страница
+label.header.my.page = Заявки, ожидающие действия
+
+label.header.deal.upload.files = Прикрепить файлы
+label.header.deal.upload.file = Выбрать файл для прикрепления
+
+label.header.deal.upload.file.finished = Добавьте еще файл или нажмите 'Отмена', чтобы закончить
+label.header.deal.upload.file.finished.success = Файл был прикреплен:
+label.header.deal.upload.file.link = Выбрать еще файл для загрузки
+
+label.header.deal.upload.docs = Прикрепить документы
+label.header.deal.upload.doc = Выбрать документ для прикрепления
+
+label.header.deal.upload.doc.finished = Добавьте еще документ или нажмите 'Отмена', чтобы закончить
+label.header.deal.upload.doc.finished.success = Файл был прикреплен:
+label.header.deal.upload.doc.link = Выбрать еще файл для загрузки
+
+deal.upload.general.failure.message = Неизвестная ошибка
+
+label.deals.table.operator.name = Имя оператора
+label.deals.table.workflow.type = Состояние
+
+label.official.income.income.type = Офіційний дохід
+label.official.salary.income.type = Офіційна заробітня плата
+
+label.calls.table.operator.name = Имя оператора
+label.calls.table.office = Офис
