@@ -33,9 +33,10 @@
 		</div>
 		<div id="login-holder">
 			<div id="logo-login">
-				<a href="${contextPath}/index"> <img
+				<!-- <a href="${contextPath}/index"> <img
 					src="${contextPath}/static/images/shared/logo.png" width="156" height="40" alt="" />
 				</a>
+				 -->
 			</div>
 			<div class="clear" />
 			<tiles:insertAttribute name="box" />

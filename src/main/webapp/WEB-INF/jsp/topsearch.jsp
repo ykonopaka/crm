@@ -25,9 +25,11 @@
 	<div id="page-top-outer">
 		<div id="page-top">
 			<div id="logo">
+				<!-- 
 				<a href="">
 					<img src="${contextPath}/static/images/shared/logo.png" width="156" height="40" alt="" />
 				</a>
+				 -->
 			</div>
 			<div id="top-search">
 <!-- 				<table border="0" cellpadding="0" cellspacing="0">
